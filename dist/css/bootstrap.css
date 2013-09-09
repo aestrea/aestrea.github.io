@@ -6024,16 +6024,6 @@ body {
   .navbar .container {
     margin-top: 0px;
   }
-  .navbar .navbar-header {
-    float: none;
-    margin-bottom: 20px;
-  }
-  .navbar .navbar-header .navbar-brand {
-    float: none;
-  }
-  .navbar .navbar-header .navbar-brand img {
-    width: 30%;
-  }
   .navbar .navbar-right {
     font-size: 24px;
   }
@@ -6069,6 +6059,37 @@ body {
   }
   #mantra .carousel-caption .caption-subheader p {
     font-size: 23px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* For ipad portrait layouts only */
+  .navbar .navbar-header {
+    float: none;
+    margin-bottom: 20px;
+  }
+  .navbar .navbar-header .navbar-brand {
+    float: none;
+  }
+  .navbar .navbar-header .navbar-brand img {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* For ipad portrait layouts only */
+  .navbar .navbar-header {
+    margin: 30px 0px 0px 0px;
+  }
+  .navbar .navbar-header .navbar-brand {
+    float: left;
+  }
+  .navbar .navbar-header .navbar-brand img {
+    width: 80%;
+  }
+  .navbar .navbar-right li > a {
+    padding-right: 18px;
+  }
+  .navbar .container {
+    margin-top: 80px;
   }
 }
 @media (max-width: 480px) {
