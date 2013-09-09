@@ -86,7 +86,7 @@ body {
     float: left;
 
     .lets-work-header {
-      max-width: 635px;
+      max-width: 640px;
       max-height: 146px;
       font-family: "Gloriola Std Regular";
       font-size: 53px;
@@ -155,14 +155,43 @@ body {
 
 
 //MEDIA
-@media (max-width: 768px) {
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)  {
+
   .navbar {
     .container {
       margin-top: 0px;
     }
+
+    .navbar-header {
+      float: none;
+      margin-bottom: 20px;
+      .navbar-brand {
+        float: none;
+        img {
+          width: 30%;
+        }
+
+      }
+
+    }
+
+    .navbar-right {
+      font-size: 24px;
+    }
   }
 
+
   #lets-work {
+
+    .lets-work-text {
+      padding-left: 25px;
+      padding-right: 25px;
+      float: left;
+
+    }
+
     img {
       display: block;
       margin-top: 20px;
