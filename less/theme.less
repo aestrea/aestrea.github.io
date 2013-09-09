@@ -259,6 +259,7 @@ and (max-width : 1024px)  {
     .navbar-right {
       li > a {
         padding-right: 17px;
+        color: #05466c;
       }
     }
 
@@ -270,9 +271,15 @@ and (max-width : 1024px)  {
 
 }
 
+@media (max-width: 767px) {
+  .navbar {
+    .container {
+      margin-top: 0px;
+    }
+  }
+}
 
 @media (max-width: 480px) {
-
   #lets-work {
 
     .lets-work-text {
@@ -291,6 +298,7 @@ and (max-width : 1024px)  {
       }
     }
     img {
+      margin-left: 0px;
       width: 100%;
     }
   }

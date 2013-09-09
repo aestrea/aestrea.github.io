@@ -6084,9 +6084,15 @@ body {
   }
   .navbar .navbar-right li > a {
     padding-right: 17px;
+    color: #05466c;
   }
   .navbar .container {
     margin-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar .container {
+    margin-top: 0px;
   }
 }
 @media (max-width: 480px) {
@@ -6099,6 +6105,7 @@ body {
     font-size: 16px;
   }
   #lets-work img {
+    margin-left: 0px;
     width: 100%;
   }
   #mantra {
