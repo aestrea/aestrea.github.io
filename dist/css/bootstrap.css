@@ -6082,14 +6082,11 @@ body {
   .navbar .navbar-header .navbar-brand {
     float: left;
   }
-  .navbar .navbar-header .navbar-brand img {
-    width: 80%;
-  }
   .navbar .navbar-right li > a {
-    padding-right: 18px;
+    padding-right: 17px;
   }
   .navbar .container {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 }
 @media (max-width: 480px) {
