@@ -5955,15 +5955,15 @@ body {
 .navbar .container {
   margin-top: 80px;
 }
-.lets-work {
+#lets-work {
   min-height: 530px;
 }
-.lets-work .lets-work-text {
+#lets-work .lets-work-text {
   padding-left: 25px;
   padding-right: 25px;
   float: left;
 }
-.lets-work .lets-work-text .lets-work-header {
+#lets-work .lets-work-text .lets-work-header {
   max-width: 635px;
   max-height: 146px;
   font-family: "Gloriola Std Regular";
@@ -5972,37 +5972,117 @@ body {
   padding-bottom: 25px;
   line-height: 65px;
 }
-.lets-work .lets-work-text .lets-work-sub-header {
+#lets-work .lets-work-text .lets-work-sub-header {
   max-width: 563px;
   max-height: 150px;
   font-size: 26px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.lets-work img {
+#lets-work img {
   margin-top: 20px;
   margin-left: -25px;
+}
+#mantra {
+  min-height: 455px;
+}
+#mantra .carousel-caption {
+  max-width: 1075px;
+  padding-bottom: 100px;
+}
+#mantra .carousel-caption h1 {
+  font-family: "Gloriola Std Regular";
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+#mantra .carousel-caption .caption-subheader {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#mantra .carousel-caption .caption-subheader p {
+  position: relative;
+  font-family: "Gloriola Std Regular";
+  font-size: 28px;
+  color: #d2d2d2;
+}
+#mantra .carousel-caption .caption-subheader .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2b2b2b;
+  opacity: 0.5;
 }
 @media (max-width: 768px) {
   .navbar .container {
     margin-top: 0px;
   }
-  .lets-work img {
+  #lets-work img {
     display: block;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 50%;
     height: auto;
+  }
+  #mantra .carousel-inner .item img {
+    max-width: 1280px;
+  }
+  #mantra .carousel-caption {
+    padding-bottom: 100px;
+  }
+  #mantra .carousel-caption h1 {
+    font-family: "Gloriola Std Regular";
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  #mantra .carousel-caption .caption-subheader {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #mantra .carousel-caption .caption-subheader p {
+    font-size: 23px;
   }
 }
 @media (max-width: 480px) {
-  .lets-work .lets-work-text .lets-work-header {
+  #lets-work .lets-work-text .lets-work-header {
     margin-top: 10px;
     font-size: 26px;
     line-height: 34px;
   }
-  .lets-work .lets-work-text .lets-work-sub-header {
+  #lets-work .lets-work-text .lets-work-sub-header {
+    font-size: 16px;
+  }
+  #lets-work img {
+    width: 100%;
+  }
+  #mantra {
+    min-height: 300px;
+  }
+  #mantra .carousel-inner .item img {
+    max-width: 850px;
+  }
+  #mantra .carousel-caption {
+    padding-bottom: 70px;
+  }
+  #mantra .carousel-caption h1 {
+    font-family: "Gloriola Std Regular";
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  #mantra .carousel-caption .caption-subheader {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #mantra .carousel-caption .caption-subheader p {
     font-size: 16px;
   }
 }

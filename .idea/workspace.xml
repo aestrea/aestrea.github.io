@@ -3,17 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="98fa0033-1fcd-4384-b60b-968aee25ec1d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/theme.less" afterPath="$PROJECT_DIR$/less/theme.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aestrea-www.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378486846361" ignored="false" />
     <file path="/carousel.html" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378487690516" ignored="false" />
-    <file path="/theme.less" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378714284336" ignored="false" />
-    <file path="/index.html" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378711895978" ignored="false" />
+    <file path="/theme.less" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378723597630" ignored="false" />
+    <file path="/index.html" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378720207033" ignored="false" />
     <file path="/dummy.xml" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378696345408" ignored="false" />
     <file path="/a.dummy" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378698554864" ignored="false" />
-    <file path="/bootstrap.css" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378710037661" ignored="false" />
-    <file path="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.svg" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378714305310" ignored="false" />
+    <file path="/bootstrap.css" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378717133719" ignored="false" />
+    <file path="$USER_HOME$/Grails/laiya-app/grails-app/views/root/map.gsp" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378714712794" ignored="false" />
+    <file path="/map.gsp" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378714712113" ignored="false" />
+    <file path="$USER_HOME$/Grails/laiya-app/web-app/less/hotel-main.less" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378715055528" ignored="false" />
+    <file path="/hotel-main.less" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378715050060" ignored="false" />
+    <file path="/README.md" changelist="98fa0033-1fcd-4384-b60b-968aee25ec1d" time="1378715484980" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,32 +83,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="theme.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="theme.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/less/theme.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="19" selection-start="2848" selection-end="2848" vertical-scroll-proportion="0.019607844">
+            <state line="242" column="23" selection-start="4560" selection-end="4560" vertical-scroll-proportion="0.42225394">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/css/bootstrap.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="32504" selection-start="32986" selection-end="32986" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1378714289000" expanded="true" signature="98924:98984" placeholder="{...}" />
-                <marker date="1378714289000" expanded="true" signature="99451:99526" placeholder="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -107,26 +95,26 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="16" selection-start="2566" selection-end="2566" vertical-scroll-proportion="-4.266667">
+            <state line="75" column="63" selection-start="3386" selection-end="3413" vertical-scroll-proportion="-4.591837">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="51" selection-start="224" selection-end="224" vertical-scroll-proportion="-5.0">
-              <folding />
+            <state line="5445" column="4" selection-start="110115" selection-end="110115" vertical-scroll-proportion="-17.56">
+              <folding>
+                <marker date="1378723638000" expanded="true" signature="121628:121663" placeholder="{...}" />
+                <marker date="1378723638000" expanded="true" signature="121690:121698" placeholder="{...}" />
+                <marker date="1378723638000" expanded="true" signature="121754:121774" placeholder="{...}" />
+                <marker date="1378723638000" expanded="true" signature="121890:121979" placeholder="{...}" />
+                <marker date="1378723638000" expanded="true" signature="122591:123076" placeholder="{...}" />
+                <marker date="1378723638000" expanded="true" signature="121661:121667" placeholder="{...}" />
+                <marker date="1378723638000" expanded="true" signature="121691:121807" placeholder="{...}" />
+                <marker date="1378723638000" expanded="true" signature="123103:123856" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,31 +140,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3925" column="6" selection-start="73787" selection-end="73792" vertical-scroll-proportion="-5.56">
-              <folding>
-                <marker date="1378714287000" expanded="true" signature="121166:121231" placeholder="{...}" />
-                <marker date="1378714287000" expanded="true" signature="121277:121423" placeholder="{...}" />
-                <marker date="1378714287000" expanded="true" signature="121492:121557" placeholder="{...}" />
-                <marker date="1378714287000" expanded="true" signature="121635:121663" placeholder="{...}" />
-                <marker date="1378714287000" expanded="true" signature="121778:121888" placeholder="{...}" />
-                <marker date="1378714287000" expanded="true" signature="121083:121106" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="glyphicons.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/glyphicons.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="16" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -198,10 +161,10 @@
         <option value="$PROJECT_DIR$/examples/carousel.html" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/Gruntfile.coffee" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/less/theme.less" />
-        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -485,7 +448,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -628,13 +591,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="51" selection-start="224" selection-end="224" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="50" selection-start="648" selection-end="648" vertical-scroll-proportion="-0.35885167">
@@ -651,45 +607,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32504" selection-start="32986" selection-end="32986" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1378714289000" expanded="true" signature="98924:98984" placeholder="{...}" />
-            <marker date="1378714289000" expanded="true" signature="99451:99526" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3925" column="6" selection-start="73787" selection-end="73792" vertical-scroll-proportion="-5.56">
-          <folding>
-            <marker date="1378714287000" expanded="true" signature="121166:121231" placeholder="{...}" />
-            <marker date="1378714287000" expanded="true" signature="121277:121423" placeholder="{...}" />
-            <marker date="1378714287000" expanded="true" signature="121492:121557" placeholder="{...}" />
-            <marker date="1378714287000" expanded="true" signature="121635:121663" placeholder="{...}" />
-            <marker date="1378714287000" expanded="true" signature="121778:121888" placeholder="{...}" />
-            <marker date="1378714287000" expanded="true" signature="121083:121106" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="16" selection-start="2566" selection-end="2566" vertical-scroll-proportion="-4.266667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/theme.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="19" selection-start="2848" selection-end="2848" vertical-scroll-proportion="0.019607844">
+        <state line="17" column="32504" selection-start="32986" selection-end="32986" vertical-scroll-proportion="0.5769231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="51" selection-start="224" selection-end="224" vertical-scroll-proportion="0.26431718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5445" column="4" selection-start="110115" selection-end="110115" vertical-scroll-proportion="-17.56">
+          <folding>
+            <marker date="1378723638000" expanded="true" signature="121628:121663" placeholder="{...}" />
+            <marker date="1378723638000" expanded="true" signature="121690:121698" placeholder="{...}" />
+            <marker date="1378723638000" expanded="true" signature="121754:121774" placeholder="{...}" />
+            <marker date="1378723638000" expanded="true" signature="121890:121979" placeholder="{...}" />
+            <marker date="1378723638000" expanded="true" signature="122591:123076" placeholder="{...}" />
+            <marker date="1378723638000" expanded="true" signature="121661:121667" placeholder="{...}" />
+            <marker date="1378723638000" expanded="true" signature="121691:121807" placeholder="{...}" />
+            <marker date="1378723638000" expanded="true" signature="123103:123856" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="63" selection-start="3386" selection-end="3413" vertical-scroll-proportion="-4.591837">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/theme.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="242" column="23" selection-start="4560" selection-end="4560" vertical-scroll-proportion="0.42225394">
           <folding />
         </state>
       </provider>
