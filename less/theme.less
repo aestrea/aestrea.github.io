@@ -40,6 +40,15 @@
   url('../fonts/gloriola_std_regular-webfont.svg#gloriola_std_regular-webfont') format('svg');
 }
 
+@font-face {
+  font-family: 'Gloriola Semi Bold';
+  src: url('../fonts/gloriola_std_semibold-webfont.eot');
+  src: url('../fonts/gloriola_std_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/gloriola_std_semibold-webfont.woff') format('woff'),
+  url('../fonts/gloriola_std_semibold-webfont.ttf') format('truetype'),
+  url('../fonts/gloriola_std_semibold-webfont.svg#gloriola_std_semibold-webfont') format('svg');
+}
+
 body {
   font-family: "Gloriola Thin";
   background-color: #2A2A2A;
@@ -151,8 +160,22 @@ body {
 
 }
 
+#services {
+  min-height: 650px;
+  background-color: #61a0d6;
+  color: #ffffff;
+
+  .header {
+    font-family: "Gloriola Std Light";
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
 footer {
-  max-height: 180px;
+  min-height: 180px;
   background-image: url("../../images/footer.jpg");
 }
 
