@@ -1,11 +1,11 @@
 {
-  "name": "bootstrap-theme-themestrap-sample",
+  "name": "aestrea-www",
   "version": "0.0.1",
   "private": true,
-  "author": "Your Name",
-  "main": "dist/bootstrap.css",
+  "author": "Dino Poblete",
+  "main": "dist/css/bootstrap.css",
   "themestrap": {
-    "name": "Themestrap Sample",
+    "name": "Aestrea",
     "repo": "https://github.com/divshot/themestrap"
   },
   "ignore": [

@@ -6814,3 +6814,47 @@ td.visible-print {
     display: none !important;
   }
 }
+
+@font-face {
+  font-family: 'Gloriola Std Light';
+  src: url('../fonts/gloriola_std_light-webfont.eot');
+  src: url('../fonts/gloriola_std_light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gloriola_std_light-webfont.woff') format('woff'), url('../fonts/gloriola_std_light-webfont.ttf') format('truetype'), url('../fonts/gloriola_std_light-webfont.svg#gloriola_std_light-webfont') format('svg');
+}
+
+@font-face {
+  font-family: 'Gloriola Thin';
+  src: url('../fonts/gloriola_display_thin-webfont.eot');
+  src: url('../fonts/gloriola_display_thin-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gloriola_display_thin-webfont.woff') format('woff'), url('../fonts/gloriola_display_thin-webfont.ttf') format('truetype'), url('../fonts/gloriola_display_thin-webfont.svg#gloriola_display_thin-webfont') format('svg');
+}
+
+body {
+  font-family: "Gloriola Thin";
+  background-color: #2A2A2A;
+}
+
+.navbar {
+  min-height: 150px;
+  background-color: #FAFAFA;
+}
+
+.navbar .navbar-right {
+  font-size: 28px;
+}
+
+.navbar .navbar-right li > a {
+  color: #05466c;
+}
+
+.navbar .navbar-header {
+  margin: 30px 25px 0 25px;
+}
+
+.navbar .container {
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    margin-top: 0;
+  }
+}
