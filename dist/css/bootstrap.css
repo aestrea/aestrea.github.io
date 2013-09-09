@@ -6020,6 +6020,10 @@ body {
   background-color: #2b2b2b;
   opacity: 0.5;
 }
+footer {
+  max-height: 180px;
+  background-image: url("../../images/footer.jpg");
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar .container {
     margin-top: 0px;
