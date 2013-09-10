@@ -6025,19 +6025,19 @@ body {
   background-color: #2b2b2b;
   opacity: 0.5;
 }
-#services {
-  min-height: 650px;
-  background-color: #61a0d6;
-  color: #ffffff;
-  width: 100%;
-}
-#services .header {
+.header {
   font-family: "Gloriola Std Light";
   margin-top: 40px;
   margin-bottom: 40px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
+}
+#services {
+  min-height: 650px;
+  background-color: #61a0d6;
+  color: #ffffff;
+  width: 100%;
 }
 #services .service-container .service-row {
   width: 100%;
@@ -6067,6 +6067,40 @@ body {
   width: 300px;
   font-family: "Gloriola Thin";
   font-size: 18px;
+}
+#clients {
+  min-height: 600px;
+  background-color: #abd58f;
+  color: #ffffff;
+  width: 100%;
+}
+#clients .header {
+  color: #ffffff;
+}
+#clients .client-row {
+  width: 100%;
+}
+#clients .client-row .centerwrapper {
+  width: 96%;
+  margin: auto;
+  float: none;
+}
+#clients .client-row .centerwrapper .client-item {
+  float: left;
+  margin: 50px;
+}
+#clients .client-row .centerwrapper .client-item p {
+  font-family: "Gloriola Std Regular";
+  font-size: 18px;
+  margin-top: 20px;
+}
+#about {
+  min-height: 1260px;
+  background-color: #ffffff;
+  width: 100%;
+}
+#about .header {
+  color: #34688d;
 }
 footer {
   min-height: 180px;
@@ -6128,6 +6162,12 @@ footer {
   #services .service-container .service-row .centerwrapper {
     width: 65% !important;
   }
+  #clients .client-row .centerwrapper {
+    width: 45% !important;
+  }
+  #clients .client-row .centerwrapper .client-item {
+    margin: 20px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* For ipad portrait layouts only */
@@ -6149,6 +6189,14 @@ footer {
   }
   #services .service-container .service-row:last-child .centerwrapper {
     width: 47%;
+  }
+  #clients .client-row .centerwrapper {
+    width: 97%;
+  }
+  #clients .client-row .centerwrapper .client-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -6174,8 +6222,18 @@ footer {
     font-size: 14px;
     width: 185px;
   }
+  #clients .client-row .centerwrapper {
+    width: 92% !important;
+  }
+  #clients .client-row .centerwrapper .client-item {
+    margin: 20px;
+    text-align: center;
+  }
+  #clients .client-row .centerwrapper .client-item img {
+    width: 80%;
+  }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   #lets-work .lets-work-text .lets-work-header {
     margin-top: 10px;
     font-size: 26px;

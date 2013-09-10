@@ -160,20 +160,20 @@ body {
 
 }
 
+.header {
+  font-family: "Gloriola Std Light";
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
 #services {
   min-height: 650px;
   background-color: #61a0d6;
   color: #ffffff;
   width: 100%;
-
-  .header {
-    font-family: "Gloriola Std Light";
-    margin-top: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-  }
 
   .service-container {
 
@@ -221,7 +221,52 @@ body {
 
 }
 
+#clients {
+  min-height: 600px;
+  background-color: #abd58f;
+  color: #ffffff;
+  width: 100%;
 
+  .header {
+    color: #ffffff;
+  }
+
+  .client-row {
+    width: 100%;
+
+    .centerwrapper {
+      width: 96%;
+      margin: auto;
+      float: none;
+
+      .client-item {
+
+        float: left;
+        margin: 50px;
+
+        img {
+
+        }
+
+        p {
+          font-family: "Gloriola Std Regular";
+          font-size: 18px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+#about {
+  min-height: 1260px;
+  background-color: #ffffff;
+  width: 100%;
+
+  .header {
+    color: #34688d;
+  }
+}
 
 footer {
   min-height: 180px;
@@ -324,6 +369,19 @@ and (max-width : 1024px)  {
     }
   }
 
+  #clients {
+    .client-row {
+      .centerwrapper {
+        width: 45% !important;
+
+        .client-item {
+          margin: 20px;
+        }
+
+      }
+    }
+  }
+
 
 }
 
@@ -365,7 +423,20 @@ and (max-width : 1024px)  {
     }
   }
 
+  #clients {
+    .client-row {
+      .centerwrapper {
+        width: 97%;
 
+        .client-item {
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 30px;
+        }
+
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -409,9 +480,27 @@ and (max-width : 1024px)  {
 
 
   }
+
+  #clients {
+    .client-row {
+      .centerwrapper {
+        width: 92% !important;
+
+        .client-item {
+          margin: 20px;
+          text-align: center;
+
+          img {
+            width: 80%;
+          }
+        }
+
+      }
+    }
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   #lets-work {
 
     .lets-work-text {
