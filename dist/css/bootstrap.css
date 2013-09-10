@@ -6029,13 +6029,44 @@ body {
   min-height: 650px;
   background-color: #61a0d6;
   color: #ffffff;
+  width: 100%;
 }
 #services .header {
   font-family: "Gloriola Std Light";
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
+}
+#services .service-container .service-row {
+  width: 100%;
+}
+#services .service-container .service-row .centerwrapper {
+  width: 74%;
+  margin: auto;
+  float: none;
+}
+#services .service-container .service-row:last-child .centerwrapper {
+  width: 36%;
+}
+#services .service-container .service-row .service-item {
+  float: left;
+  margin: 0px 20px 50px 20px;
+}
+#services .service-container .service-row .service-item .service-icon {
+  float: left;
+}
+#services .service-container .service-row .service-item .service-content {
+  margin-left: 120px;
+}
+#services .service-container .service-row .service-item .service-content h4 {
+  font-family: "Gloriola Std Regular";
+}
+#services .service-container .service-row .service-item .service-content p {
+  width: 300px;
+  font-family: "Gloriola Thin";
+  font-size: 18px;
 }
 footer {
   min-height: 180px;
@@ -6094,6 +6125,9 @@ footer {
   .navbar .navbar-header .navbar-brand img {
     width: 30%;
   }
+  #services .service-container .service-row .centerwrapper {
+    width: 65% !important;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* For ipad portrait layouts only */
@@ -6110,10 +6144,35 @@ footer {
   .navbar .container {
     margin-top: 80px;
   }
+  #services .service-container .service-row .centerwrapper {
+    width: 93%;
+  }
+  #services .service-container .service-row:last-child .centerwrapper {
+    width: 47%;
+  }
 }
 @media (max-width: 767px) {
   .navbar .container {
     margin-top: 0px;
+  }
+  #services .service-container .service-row .centerwrapper {
+    width: 100% !important;
+  }
+  #services .service-container .service-row .service-item {
+    margin-bottom: 30px;
+  }
+  #services .service-container .service-row .service-item .service-icon img {
+    width: 90%;
+  }
+  #services .service-container .service-row .service-item .service-content {
+    margin-left: 80px;
+  }
+  #services .service-container .service-row .service-item .service-content h4 {
+    font-size: 14px;
+  }
+  #services .service-container .service-row .service-item .service-content p {
+    font-size: 14px;
+    width: 185px;
   }
 }
 @media (max-width: 480px) {

@@ -164,15 +164,64 @@ body {
   min-height: 650px;
   background-color: #61a0d6;
   color: #ffffff;
+  width: 100%;
 
   .header {
     font-family: "Gloriola Std Light";
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
     font-size: 30px;
     font-weight: 700;
   }
+
+  .service-container {
+
+    .service-row {
+      width: 100%;
+
+      .centerwrapper {
+        width: 74%;
+        margin: auto;
+        float: none;
+      }
+
+      &:last-child {
+        .centerwrapper {
+          width: 36%;
+        }
+      }
+
+      .service-item {
+        float: left;
+        margin: 0px 20px 50px 20px;
+
+
+        .service-icon {
+          float: left;
+        }
+
+        .service-content {
+
+          margin-left: 120px;
+          h4 {
+            font-family: "Gloriola Std Regular";
+          }
+          p {
+            width: 300px;
+            font-family: "Gloriola Thin";
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+
+  }
+
 }
+
+
 
 footer {
   min-height: 180px;
@@ -267,6 +316,14 @@ and (max-width : 1024px)  {
     }
   }
 
+  #services {
+    .service-container .service-row {
+      .centerwrapper {
+        width: 65% !important;
+      }
+    }
+  }
+
 
 }
 
@@ -294,6 +351,20 @@ and (max-width : 1024px)  {
     }
   }
 
+  #services {
+    .service-container .service-row {
+      .centerwrapper {
+        width: 93%;
+      }
+
+      &:last-child {
+        .centerwrapper {
+          width: 47%;
+        }
+      }
+    }
+  }
+
 
 }
 
@@ -302,6 +373,41 @@ and (max-width : 1024px)  {
     .container {
       margin-top: 0px;
     }
+  }
+
+  #services {
+    .service-container .service-row {
+      .centerwrapper {
+        width: 100% !important;
+      }
+
+      .service-item {
+
+        margin-bottom: 30px;
+
+        .service-icon {
+
+          img {
+            width: 90%;
+          }
+        }
+        .service-content {
+
+          margin-left: 80px;
+          h4 {
+            font-size: 14px;
+          }
+          p {
+            font-size: 14px;
+            width: 185px;
+          }
+        }
+      }
+
+
+    }
+
+
   }
 }
 
