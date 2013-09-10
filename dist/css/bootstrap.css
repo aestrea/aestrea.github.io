@@ -6230,7 +6230,8 @@ footer {
     text-align: center;
   }
   #clients .client-row .centerwrapper .client-item img {
-    width: 100%;
+    width: 240px;
+    height: 240px;
   }
 }
 @media (max-width: 767px) {
