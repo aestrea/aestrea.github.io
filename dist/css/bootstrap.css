@@ -5940,6 +5940,21 @@ body {
   font-family: "Gloriola Thin";
   background-color: #2A2A2A;
 }
+.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
+
+  filter: gray;
+  /* IE6-9 */
+
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+
+}
+.grayscale.disabled {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
 .container {
   background-color: #FAFAFA;
   max-width: 1280px;
@@ -6089,10 +6104,41 @@ body {
   float: left;
   margin: 50px;
 }
+#clients .client-row .centerwrapper .client-item img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
+
+  filter: gray;
+  /* IE6-9 */
+
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+
+}
+#clients .client-row .centerwrapper .client-item img:hover {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
 #clients .client-row .centerwrapper .client-item p {
   font-family: "Gloriola Std Regular";
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 20px;
+}
+#technologies {
+  min-height: 600px;
+  background-color: #ffffff;
+  width: 100%;
+}
+#technologies .header {
+  color: #abd58f;
+}
+#portfolio {
+  min-height: 600px;
+  background-color: #9fadae;
+  width: 100%;
+}
+#portfolio .header {
+  color: #dce1e1;
 }
 #about {
   min-height: 1260px;
