@@ -278,9 +278,42 @@ body {
   min-height: 600px;
   background-color: #ffffff;
   width: 100%;
+  margin-bottom: 40px;
 
   .header {
     color: #abd58f;
+  }
+
+  .centerwrapper {
+    float: none;
+    margin: auto;
+    width: 84%;
+  }
+
+  .tool-item {
+    border: 3px dashed;
+    border-color: #abd58f;
+    position: relative;
+    float: left;
+
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    vertical-align: center;
+
+
+    img {
+      position:absolute;
+      top:0;
+      bottom:0;
+      margin:auto;
+      width: inherit;
+      padding: 30px;
+    }
+    &:hover{
+      border: solid;
+      border-color: #abd58f;
+    }
   }
 }
 
@@ -418,7 +451,11 @@ and (max-width : 1024px)  {
     }
   }
 
-
+  #technologies {
+    .centerwrapper {
+      width: 86%;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
@@ -471,6 +508,12 @@ and (max-width : 1024px)  {
         }
 
       }
+    }
+  }
+
+  #technologies {
+    .centerwrapper {
+      width: 85%;
     }
   }
 }
@@ -532,6 +575,32 @@ and (max-width : 1024px)  {
           }
         }
 
+      }
+    }
+  }
+
+  #technologies {
+
+    .centerwrapper {
+
+      width: 96%;
+      .tool-item {
+
+        width: 72px;
+        height: 72px;
+
+        margin: 10px;
+        vertical-align: center;
+
+
+        img {
+          position:absolute;
+          top:0;
+          bottom:0;
+          margin:auto;
+          width: inherit;
+          padding: 14px;
+        }
       }
     }
   }
