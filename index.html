@@ -251,6 +251,131 @@
 
             <div id="portfolio" class="container">
                 <div class="header">what we have done</div>
+
+                <div id="portfolio-container">
+
+
+                    <div class="grid-sizer"></div>
+                    <div class="thumbnail">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Edhance</h5>
+                            <div class="divider"></div>
+                            <p>A deals and discounts company that promotes merchants to students around the US, through credit card linking technology.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="thumbnail">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Bcode</h5>
+                            <div class="divider"></div>
+                            <p>A touch screen kiosk app connected to a bCode reader.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="thumbnail">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Admap POC</h5>
+                            <div class="divider"></div>
+                            <p>A proof of concept for displaying outdoor advertisements on a map for easy management and booking. (http://admap.aestrea.com)</p>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Veeou</h5>
+                            <div class="divider"></div>
+                            <p>A system that allows the user to view the TV shows currently showing in local and cable channels, then extended to allow the user to remotely switch the TV to the appropriate channel through the use of ZigBee wireless networking and infrared technologies. (veeou.com)</p>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Salpakan</h5>
+                            <div class="divider"></div>
+                            <p>An online version of the Game of the Generals board game; developed as a project for a Java course. (SalpakanOnline.com)</p>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail clearfix">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">TEES.PH</h5>
+                            <div class="divider"></div>
+                            <p>A site showcasing custom t-shirt designs. (tees.ph)</p>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail clearfix">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Smart Kiosk</h5>
+                            <div class="divider"></div>
+                            <p>A touch screen kiosk app for mobile/broadband plan customization</p>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail clearfix">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Run Registration App</h5>
+                            <div class="divider"></div>
+                            <p>A web application that is viewed through an iPad allowing users to register for a run event.</p>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail clearfix">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Gas Station Price and Volume Monitoring</h5>
+                            <div class="divider"></div>
+                            <p>A proof-of-concept gas price and volume monitoring web application aimed for users to be able to plan for sales and operation.</p>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail clearfix">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Field Engineer Deployment App POC for an Electric Power Distribution Company</h5>
+                            <div class="divider"></div>
+                            <p>A proof-of-concept Android app allowing field engineers to respond to a trouble spot, perform the necessary actions, then update the app of the field order, which then gets transmitted back to HQ. HQ then gets to see how everything is through a Google Earth client.</p>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail clearfix">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Email Blasting Apps</h5>
+                            <div class="divider"></div>
+                            <p>Applications aimed for blasting promotional emails triggered on a per-event basis.</p>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail clearfix">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Graphic Design</h5>
+                            <div class="divider"></div>
+                            <p>Graphic Designs for enhancing company brand identity http://creatives.aestrea.com</p>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail clearfix">
+                        <img src="images/portfolio/default.png"/>
+                        <div class="content">
+                            <h5 class="text-center">Motion Graphics</h5>
+                            <div class="divider"></div>
+                            <p>Explainer Videos and Advertisements for promoting company product anbrand brand http://vimeo.com/aestrea</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
             <div id="about" class="container">
@@ -264,5 +389,20 @@
 
     </div>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+
+    <script src="bower_components/masonry/masonry.pkgd.min.js"></script>
+
+    <script>
+        var $container = $('#portfolio-container');
+        // initialize
+        $container.masonry({
+            columnWidth: '.grid-sizer',
+            itemSelector: '.thumbnail',
+            gutter: 20
+
+        });
+    </script>
 </body>
 </html>
