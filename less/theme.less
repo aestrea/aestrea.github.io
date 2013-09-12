@@ -320,6 +320,7 @@ body {
 #portfolio {
   background-color: #9fadae;
   width: 100%;
+  padding-bottom: 40px;
 
   .header {
     color: #dce1e1;
@@ -366,13 +367,83 @@ body {
 }
 
 #about {
-  min-height: 1260px;
   background-color: #ffffff;
   width: 100%;
+  padding-bottom: 40px;
 
   .header {
     color: #34688d;
+    margin-bottom: 20px;
   }
+
+  .subheader {
+
+
+    p {
+      margin: 0 auto;
+      width: 70%;
+      font-family: "Gloriola Thin";
+      font-size: 18px;
+      color: #767676;
+    }
+
+  }
+
+  .centerwrapper {
+    float: none;
+    margin: auto;
+    width: 74%;
+
+    .member {
+
+      float: left;
+      margin: 40px;
+
+      .name {
+
+        h5 {
+          font-family: "Gloriola Std Regular";
+          font-size: 16px;
+        }
+
+        p {
+          font-family: "Gloriola Std Light";
+          font-size: 14px;
+        }
+        .photo1, .photo2 {
+          width: 150px;
+          height: 150px;
+        }
+        .photo1 {
+          background-color: #9fadae;
+        }
+
+        .photo2 {
+          background-color: #dce1e1;
+        }
+
+        .icon-container {
+
+          float: none;
+          margin: 0 auto;
+          width: 64%;
+
+          .icon {
+            background-color: #2f2f2f;
+            width: 26px;
+            height: 26px;
+            float: left;
+            margin-right: 3px;
+            margin-left: 3px;
+          }
+        }
+
+      }
+
+
+    }
+  }
+
 }
 
 .divider {
@@ -386,7 +457,7 @@ footer {
   background-image: url("../../images/footer.jpg");
 }
 
-
+//============== START MEDIA ===========
 //MEDIA
 @media only screen
 and (min-width : 768px)
@@ -463,6 +534,12 @@ and (max-width : 1024px)  {
       }
     }
   }
+
+  #about {
+    .centerwrapper {
+      width: 94%;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
@@ -509,7 +586,10 @@ and (max-width : 1024px)  {
     }
   }
 
+
 }
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
   /* For ipad portrait layouts only */
@@ -569,6 +649,7 @@ and (max-width : 1024px)  {
       width: 85%;
     }
   }
+
 }
 
 @media (max-width: 767px) {
@@ -729,6 +810,32 @@ and (max-width : 568px) {
 
       .grid-sizer, .thumbnail {
         width: 100%;
+      }
+    }
+  }
+
+  #about {
+    .centerwrapper {
+
+      width: 100%;
+      .member {
+
+        margin: 20px;
+        height: 200px;
+
+        .name {
+          width: 100px;
+          .photo1, .photo2 {
+            width: 100px;
+            height: 100px;
+          }
+          .icon-container {
+            .icon {
+              width: 13px;
+              height: 13px;
+            }
+          }
+        }
       }
     }
   }
