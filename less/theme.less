@@ -70,6 +70,13 @@ body {
   max-width: 1280px;
 }
 
+.centerwrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+
+
 .navbar {
   min-height: 150px;
 
@@ -103,6 +110,7 @@ body {
   .lets-work-text {
     padding-left: 25px;
     padding-right: 25px;
+    margin-top: 55px;
     float: left;
 
     .lets-work-header {
@@ -110,7 +118,6 @@ body {
       max-height: 146px;
       font-family: "Gloriola Std Regular";
       font-size: 53px;
-      margin-top: 55px;
       padding-bottom: 25px;
       line-height: 65px;
     }
@@ -173,8 +180,8 @@ body {
 
 .header {
   font-family: "Gloriola Std Light";
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -186,22 +193,10 @@ body {
   color: #ffffff;
   width: 100%;
 
-  .service-container {
-
+  .centerwrapper {
     .service-row {
-      width: 100%;
-
-      .centerwrapper {
-        width: 74%;
-        margin: auto;
-        float: none;
-      }
-
-      &:last-child {
-        .centerwrapper {
-          width: 36%;
-        }
-      }
+      margin: auto;
+      width: 960px;
 
       .service-item {
         float: left;
@@ -225,35 +220,37 @@ body {
           }
         }
       }
-    }
 
+      &.service-row:last-child .service-item{
+        width: 450px;
+        margin: auto;
+        float: none;
+      }
+  }
 
   }
+
 
 }
 
 #clients {
-  min-height: 600px;
-  background-color: #abd58f;
+  min-height: 500px;
+  background-color: #abd58f !important;
   color: #ffffff;
   width: 100%;
 
-  .header {
-    color: #ffffff;
-  }
+  .centerwrapper {
 
-  .client-row {
-    width: 100%;
+    .header {
+      color: #ffffff;
+    }
 
-    .centerwrapper {
-      width: 96%;
-      margin: auto;
-      float: none;
-
-      .client-item {
+    .client-items {
+      .item {
 
         float: left;
         margin: 50px;
+        width: 25%;
 
         img {
 
@@ -282,38 +279,45 @@ body {
   .header {
     color: #abd58f;
   }
-
   .centerwrapper {
-    float: none;
-    margin: auto;
-    width: 85%;
-  }
 
-  .tool-item {
+    .tool-container {
 
-    border: 3px dashed;
-    border-color: #abd58f;
-    position: relative;
-    float: left;
+      width: 1100px;
+      margin: auto;
 
-    width: 150px;
-    height: 150px;
-    margin: 30px;
-    vertical-align: center;
+      .tool-item {
+
+        float: left;
+
+        .image-holder {
+          border: 3px dashed;
+          border-color: #abd58f;
+          position: relative;
+
+          width: 150px;
+          height: 150px;
+          margin: 30px;
+          vertical-align: center;
+
+          img {
+            position:absolute;
+            top:0;
+            bottom:0;
+            margin:auto;
+            width: inherit;
+            padding: 30px;
+          }
+          &:hover{
+            border: solid;
+            border-color: #abd58f;
+          }
+        }
 
 
-    img {
-      position:absolute;
-      top:0;
-      bottom:0;
-      margin:auto;
-      width: inherit;
-      padding: 30px;
+      }
     }
-    &:hover{
-      border: solid;
-      border-color: #abd58f;
-    }
+
   }
 }
 
@@ -336,9 +340,7 @@ body {
     }
 
     .thumbnail {
-//      border-bottom-left-radius: 25px;
-//      border-bottom-right-radius: 25px;
-//
+
       border-top-left-radius: 25px;
       border-bottom-right-radius: 25px;
 
@@ -377,8 +379,6 @@ body {
   }
 
   .subheader {
-
-
     p {
       margin: 0 auto;
       width: 70%;
@@ -390,57 +390,58 @@ body {
   }
 
   .centerwrapper {
-    float: none;
-    margin: auto;
-    width: 74%;
 
-    .member {
+    .about-container {
+      width: 920px;
+      margin-left: auto;
+      margin-right: auto;
 
-      float: left;
-      margin: 40px;
+      .member {
 
-      .name {
+        float: left;
+        margin: 40px;
 
-        h5 {
-          font-family: "Gloriola Std Regular";
-          font-size: 16px;
-        }
+        .name {
 
-        p {
-          font-family: "Gloriola Std Light";
-          font-size: 14px;
-        }
-        .photo1, .photo2 {
-          width: 150px;
-          height: 150px;
-        }
-        .photo1 {
-          background-color: #9fadae;
-        }
-
-        .photo2 {
-          background-color: #dce1e1;
-        }
-
-        .icon-container {
-
-          float: none;
-          margin: 0 auto;
-          width: 64%;
-
-          .icon {
-            background-color: #2f2f2f;
-            width: 26px;
-            height: 26px;
-            float: left;
-            margin-right: 3px;
-            margin-left: 3px;
+          h5 {
+            font-family: "Gloriola Std Regular";
+            font-size: 16px;
           }
+
+          p {
+            font-family: "Gloriola Std Light";
+            font-size: 14px;
+          }
+          .photo1, .photo2 {
+            width: 150px;
+            height: 150px;
+          }
+          .photo1 {
+            background-color: #9fadae;
+          }
+
+          .photo2 {
+            background-color: #dce1e1;
+          }
+
+          .icon-container {
+
+            float: none;
+            margin: 0 auto;
+            width: 64%;
+
+            .icon {
+              background-color: #2f2f2f;
+              width: 26px;
+              height: 26px;
+              float: left;
+              margin-right: 3px;
+              margin-left: 3px;
+            }
+          }
+
         }
-
       }
-
-
     }
   }
 
@@ -459,41 +460,8 @@ footer {
 
 //============== START MEDIA ===========
 //MEDIA
-@media only screen
-and (min-width : 768px)
-and (max-width : 1024px)  {
 
-  .navbar {
-    .container {
-      margin-top: 0px;
-    }
-
-    .navbar-right {
-      font-size: 24px;
-    }
-  }
-
-
-  #lets-work {
-
-    .lets-work-text {
-      padding-left: 25px;
-      padding-right: 25px;
-      float: left;
-
-    }
-
-    img {
-      display: block;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      height: auto;
-    }
-
-  }
-
+@media only screen and (min-width : 768px) and (max-width: 1280px) {
   #mantra {
 
     .carousel-inner {
@@ -526,133 +494,193 @@ and (max-width : 1024px)  {
     }
 
   }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px)  {
+
+  .navbar {
+    .container {
+      margin-top: 0px;
+    }
+
+    .navbar-right {
+      font-size: 24px;
+    }
+  }
 
   #portfolio {
     #portfolio-container {
       .grid-sizer, .thumbnail {
-        width: 30%;
+        width: 31%;
       }
     }
   }
 
   #about {
     .centerwrapper {
-      width: 94%;
+
     }
   }
+
+  #technologies {
+    .centerwrapper {
+      .tool-container {
+
+        width: 730px;
+
+        .tool-item {
+
+          width: 25%;
+
+          .image-holder {
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            img {
+
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
-  /* For ipad portrait layouts only */
-  .navbar {
+@media only screen and (min-width : 768px) and (max-width : 1023px)  {
+  #about {
+    .centerwrapper {
+      .about-container {
+        width: 570px;
 
-    .navbar-header {
-      float: none;
-      margin-bottom: 20px;
-      .navbar-brand {
-        float: none;
-        img {
-          width: 30%;
-        }
-
-      }
-    }
-  }
-
-  #services {
-    .service-container .service-row {
-      .centerwrapper {
-        width: 65% !important;
-      }
-    }
-  }
-
-  #clients {
-    .client-row {
-      .centerwrapper {
-        width: 45% !important;
-
-        .client-item {
+        .member{
           margin: 20px;
         }
-
       }
     }
   }
-
-  #technologies {
-    .centerwrapper {
-      width: 86%;
-    }
-  }
-
-
 }
 
+@media only screen and (max-width: 1000px) {
+  #services {
+    .centerwrapper {
+      .service-row {
+        width: inherit;
 
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
-  /* For ipad portrait layouts only */
-  .navbar {
-
-    .navbar-header {
-      margin: 30px 0px 0px 0px;
-
-      .navbar-brand {
-        float: left;
+        .service-item {
+          float: none;
+          width: 450px;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
-    }
-
-    .navbar-right {
-      li > a {
-        padding-right: 17px;
-        color: #05466c;
-      }
-    }
-
-    .container {
-      margin-top: 80px;
     }
   }
+}
+
+@media only screen and (max-width: 1280px ) {
+  #lets-work {
+
+      text-align: center;
+
+      .lets-work-text {
+        float: none;
+
+        .lets-work-header, .lets-work-sub-header {
+          margin: auto;
+          text-align: center;
+        }
+      }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
 
   #services {
-    .service-container .service-row {
-      .centerwrapper {
-        width: 93%;
-      }
 
-      &:last-child {
-        .centerwrapper {
-          width: 47%;
-        }
-      }
-    }
   }
 
-  #clients {
-    .client-row {
-      .centerwrapper {
-        width: 97%;
-
-        .client-item {
-          margin-left: 10px;
-          margin-right: 10px;
-          margin-top: 30px;
-        }
-
-      }
+  #clients .centerwrapper .client-items {
+    .item {
+      margin: 20px;
+      width: 29%
     }
   }
-
-  #technologies {
-    .centerwrapper {
-      width: 85%;
-    }
-  }
-
 }
 
-@media (max-width: 767px) {
+@media only screen and (min-width: 1025px) and (max-width: 1100px) {
+  #technologies {
+    .centerwrapper {
+      .tool-container {
+
+        width: 1025px;
+
+        .tool-item {
+          .image-holder {
+            margin: 20px;
+
+            img {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 569px) and (max-width: 1023px) {
+  #clients .centerwrapper .client-items {
+    .item {
+      float: none;
+      margin: auto;
+      margin-bottom: 30px;
+      width: 300px;
+    }
+  }
+}
+
+@media only screen and (min-width: 569px) and (max-width: 767px) {
+  #technologies {
+    .centerwrapper {
+      .tool-container {
+
+        width: 500px;
+
+        .tool-item {
+
+          width: 33%;
+
+          .image-holder {
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            img {
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    #portfolio-container {
+      .grid-sizer, .thumbnail {
+        width: 47%;
+      }
+    }  }
+
+  #about {
+    .centerwrapper {
+      .about-container {
+        width: 460px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .navbar {
     .container {
       margin-top: 0px;
@@ -678,7 +706,7 @@ and (max-width : 1024px)  {
     }
     img {
       margin-left: 0px;
-      width: 100%;
+      width: 50%;
     }
   }
 
@@ -717,91 +745,71 @@ and (max-width : 1024px)  {
 
   }
 
+}
+
+@media only screen and (max-width: 568px) {
+
   #services {
-    .service-container .service-row {
-      .centerwrapper {
-        width: 100% !important;
-      }
+    .centerwrapper {
+      .service-row {
+        width: inherit;
 
-      .service-item {
-
-        margin-bottom: 30px;
-
-        .service-icon {
-
-          img {
-            width: 90%;
+        .service-item {
+          width: 300px !important;
+          .service-icon {
+            img {
+              width: 75%;
+            }
           }
-        }
-        .service-content {
 
-          margin-left: 80px;
-          h4 {
-            font-size: 14px;
-          }
-          p {
-            font-size: 14px;
-            width: 185px;
+          .service-content {
+            margin-left: 80px;
+
+            h4, p {
+              width: 200px;
+              font-size: 14px;
+            }
           }
         }
       }
-
-
     }
-
-
   }
 
-  #clients {
-    .client-row {
-      .centerwrapper {
-        width: 92% !important;
-
-        .client-item {
-          margin: 20px;
-          text-align: center;
-
-          img {
-            width: 240px;
-            height: 240px;
-          }
-        }
-
+  #clients .centerwrapper .client-items {
+    .item {
+      float: none;
+      margin: auto;
+      width: 200px;
+      img {
+        width: 200px;
       }
     }
   }
 
   #technologies {
-
     .centerwrapper {
+      .tool-container {
 
-      width: 96%;
-      .tool-item {
+        width: 300px;
 
-        width: 72px;
-        height: 72px;
+        .tool-item {
 
-        margin: 10px;
-        vertical-align: center;
+          width: 33%;
 
-
-        img {
-          position:absolute;
-          top:0;
-          bottom:0;
-          margin:auto;
-          width: inherit;
-          padding: 14px;
+          .image-holder {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            img {
+              padding: 15px;
+            }
+          }
         }
       }
     }
   }
-
-}
-
-@media only screen
-and (min-width : 320px)
-and (max-width : 568px) {
 
   #portfolio {
     #portfolio-container {
@@ -814,25 +822,29 @@ and (max-width : 568px) {
     }
   }
 
+
+
   #about {
     .centerwrapper {
 
-      width: 100%;
-      .member {
+      .about-container {
+        width: 280px;
+        .member {
 
-        margin: 20px;
-        height: 200px;
+          margin: 20px;
+          height: 200px;
 
-        .name {
-          width: 100px;
-          .photo1, .photo2 {
+          .name {
             width: 100px;
-            height: 100px;
-          }
-          .icon-container {
-            .icon {
-              width: 13px;
-              height: 13px;
+            .photo1, .photo2 {
+              width: 100px;
+              height: 100px;
+            }
+            .icon-container {
+              .icon {
+                width: 13px;
+                height: 13px;
+              }
             }
           }
         }
@@ -842,3 +854,45 @@ and (max-width : 568px) {
 }
 
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
+  /* For ipad portrait layouts only */
+  .navbar {
+
+    .navbar-header {
+      float: none;
+      margin-bottom: 20px;
+      .navbar-brand {
+        float: none;
+        img {
+          width: 30%;
+        }
+
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+  /* For ipad portrait layouts only */
+  .navbar {
+
+    .navbar-header {
+      margin: 30px 0px 0px 0px;
+
+      .navbar-brand {
+        float: left;
+      }
+    }
+
+    .navbar-right {
+      li > a {
+        padding-right: 17px;
+        color: #05466c;
+      }
+    }
+
+    .container {
+      margin-top: 80px;
+    }
+  }
+}

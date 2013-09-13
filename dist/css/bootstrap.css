@@ -5959,6 +5959,11 @@ body {
   background-color: #FAFAFA;
   max-width: 1280px;
 }
+.centerwrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
 .navbar {
   min-height: 150px;
 }
@@ -5984,6 +5989,7 @@ body {
 #lets-work .lets-work-text {
   padding-left: 25px;
   padding-right: 25px;
+  margin-top: 55px;
   float: left;
 }
 #lets-work .lets-work-text .lets-work-header {
@@ -5991,7 +5997,6 @@ body {
   max-height: 146px;
   font-family: "Gloriola Std Regular";
   font-size: 53px;
-  margin-top: 55px;
   padding-bottom: 25px;
   line-height: 65px;
 }
@@ -6042,8 +6047,8 @@ body {
 }
 .header {
   font-family: "Gloriola Std Light";
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -6054,57 +6059,48 @@ body {
   color: #ffffff;
   width: 100%;
 }
-#services .service-container .service-row {
-  width: 100%;
-}
-#services .service-container .service-row .centerwrapper {
-  width: 74%;
+#services .centerwrapper .service-row {
   margin: auto;
-  float: none;
+  width: 960px;
 }
-#services .service-container .service-row:last-child .centerwrapper {
-  width: 36%;
-}
-#services .service-container .service-row .service-item {
+#services .centerwrapper .service-row .service-item {
   float: left;
   margin: 0px 20px 50px 20px;
 }
-#services .service-container .service-row .service-item .service-icon {
+#services .centerwrapper .service-row .service-item .service-icon {
   float: left;
 }
-#services .service-container .service-row .service-item .service-content {
+#services .centerwrapper .service-row .service-item .service-content {
   margin-left: 120px;
 }
-#services .service-container .service-row .service-item .service-content h4 {
+#services .centerwrapper .service-row .service-item .service-content h4 {
   font-family: "Gloriola Std Regular";
 }
-#services .service-container .service-row .service-item .service-content p {
+#services .centerwrapper .service-row .service-item .service-content p {
   width: 300px;
   font-family: "Gloriola Thin";
   font-size: 18px;
 }
-#clients {
-  min-height: 600px;
-  background-color: #abd58f;
-  color: #ffffff;
-  width: 100%;
-}
-#clients .header {
-  color: #ffffff;
-}
-#clients .client-row {
-  width: 100%;
-}
-#clients .client-row .centerwrapper {
-  width: 96%;
+#services .centerwrapper .service-row.service-row:last-child .service-item {
+  width: 450px;
   margin: auto;
   float: none;
 }
-#clients .client-row .centerwrapper .client-item {
+#clients {
+  min-height: 500px;
+  background-color: #abd58f !important;
+  color: #ffffff;
+  width: 100%;
+}
+#clients .centerwrapper .header {
+  color: #ffffff;
+}
+#clients .centerwrapper .client-items .item {
   float: left;
   margin: 50px;
+  width: 25%;
 }
-#clients .client-row .centerwrapper .client-item img {
+#clients .centerwrapper .client-items .item img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   /* Firefox 10+, Firefox on Android */
 
@@ -6115,11 +6111,11 @@ body {
   /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 
 }
-#clients .client-row .centerwrapper .client-item img:hover {
+#clients .centerwrapper .client-items .item img:hover {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
 }
-#clients .client-row .centerwrapper .client-item p {
+#clients .centerwrapper .client-items .item p {
   font-family: "Gloriola Std Regular";
   font-size: 20px;
   margin-top: 20px;
@@ -6132,22 +6128,23 @@ body {
 #technologies .header {
   color: #abd58f;
 }
-#technologies .centerwrapper {
-  float: none;
+#technologies .centerwrapper .tool-container {
+  width: 1100px;
   margin: auto;
-  width: 85%;
 }
-#technologies .tool-item {
+#technologies .centerwrapper .tool-container .tool-item {
+  float: left;
+}
+#technologies .centerwrapper .tool-container .tool-item .image-holder {
   border: 3px dashed;
   border-color: #abd58f;
   position: relative;
-  float: left;
   width: 150px;
   height: 150px;
   margin: 30px;
   vertical-align: center;
 }
-#technologies .tool-item img {
+#technologies .centerwrapper .tool-container .tool-item .image-holder img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -6155,7 +6152,7 @@ body {
   width: inherit;
   padding: 30px;
 }
-#technologies .tool-item:hover {
+#technologies .centerwrapper .tool-container .tool-item .image-holder:hover {
   border: solid;
   border-color: #abd58f;
 }
@@ -6212,40 +6209,40 @@ body {
   font-size: 18px;
   color: #767676;
 }
-#about .centerwrapper {
-  float: none;
-  margin: auto;
-  width: 74%;
+#about .centerwrapper .about-container {
+  width: 920px;
+  margin-left: auto;
+  margin-right: auto;
 }
-#about .centerwrapper .member {
+#about .centerwrapper .about-container .member {
   float: left;
   margin: 40px;
 }
-#about .centerwrapper .member .name h5 {
+#about .centerwrapper .about-container .member .name h5 {
   font-family: "Gloriola Std Regular";
   font-size: 16px;
 }
-#about .centerwrapper .member .name p {
+#about .centerwrapper .about-container .member .name p {
   font-family: "Gloriola Std Light";
   font-size: 14px;
 }
-#about .centerwrapper .member .name .photo1,
-#about .centerwrapper .member .name .photo2 {
+#about .centerwrapper .about-container .member .name .photo1,
+#about .centerwrapper .about-container .member .name .photo2 {
   width: 150px;
   height: 150px;
 }
-#about .centerwrapper .member .name .photo1 {
+#about .centerwrapper .about-container .member .name .photo1 {
   background-color: #9fadae;
 }
-#about .centerwrapper .member .name .photo2 {
+#about .centerwrapper .about-container .member .name .photo2 {
   background-color: #dce1e1;
 }
-#about .centerwrapper .member .name .icon-container {
+#about .centerwrapper .about-container .member .name .icon-container {
   float: none;
   margin: 0 auto;
   width: 64%;
 }
-#about .centerwrapper .member .name .icon-container .icon {
+#about .centerwrapper .about-container .member .name .icon-container .icon {
   background-color: #2f2f2f;
   width: 26px;
   height: 26px;
@@ -6262,26 +6259,7 @@ footer {
   min-height: 180px;
   background-image: url("../../images/footer.jpg");
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .navbar .container {
-    margin-top: 0px;
-  }
-  .navbar .navbar-right {
-    font-size: 24px;
-  }
-  #lets-work .lets-work-text {
-    padding-left: 25px;
-    padding-right: 25px;
-    float: left;
-  }
-  #lets-work img {
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: auto;
-  }
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   #mantra .carousel-inner .item img {
     max-width: 1280px;
   }
@@ -6302,73 +6280,105 @@ footer {
   #mantra .carousel-caption .caption-subheader p {
     font-size: 23px;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar .container {
+    margin-top: 0px;
+  }
+  .navbar .navbar-right {
+    font-size: 24px;
+  }
   #portfolio #portfolio-container .grid-sizer,
   #portfolio #portfolio-container .thumbnail {
-    width: 30%;
+    width: 31%;
   }
-  #about .centerwrapper {
-    width: 94%;
+  #technologies .centerwrapper .tool-container {
+    width: 730px;
+  }
+  #technologies .centerwrapper .tool-container .tool-item {
+    width: 25%;
+  }
+  #technologies .centerwrapper .tool-container .tool-item .image-holder {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  /* For ipad portrait layouts only */
-  .navbar .navbar-header {
-    float: none;
-    margin-bottom: 20px;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #about .centerwrapper .about-container {
+    width: 570px;
   }
-  .navbar .navbar-header .navbar-brand {
-    float: none;
-  }
-  .navbar .navbar-header .navbar-brand img {
-    width: 30%;
-  }
-  #services .service-container .service-row .centerwrapper {
-    width: 65% !important;
-  }
-  #clients .client-row .centerwrapper {
-    width: 45% !important;
-  }
-  #clients .client-row .centerwrapper .client-item {
+  #about .centerwrapper .about-container .member {
     margin: 20px;
   }
-  #technologies .centerwrapper {
-    width: 86%;
+}
+@media only screen and (max-width: 1000px) {
+  #services .centerwrapper .service-row {
+    width: inherit;
+  }
+  #services .centerwrapper .service-row .service-item {
+    float: none;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* For ipad portrait layouts only */
-  .navbar .navbar-header {
-    margin: 30px 0px 0px 0px;
+@media only screen and (max-width: 1280px) {
+  #lets-work {
+    text-align: center;
   }
-  .navbar .navbar-header .navbar-brand {
-    float: left;
+  #lets-work .lets-work-text {
+    float: none;
   }
-  .navbar .navbar-right li > a {
-    padding-right: 17px;
-    color: #05466c;
+  #lets-work .lets-work-text .lets-work-header,
+  #lets-work .lets-work-text .lets-work-sub-header {
+    margin: auto;
+    text-align: center;
   }
-  .navbar .container {
-    margin-top: 80px;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  #clients .centerwrapper .client-items .item {
+    margin: 20px;
+    width: 29%;
   }
-  #services .service-container .service-row .centerwrapper {
-    width: 93%;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1100px) {
+  #technologies .centerwrapper .tool-container {
+    width: 1025px;
   }
-  #services .service-container .service-row:last-child .centerwrapper {
+  #technologies .centerwrapper .tool-container .tool-item .image-holder {
+    margin: 20px;
+  }
+}
+@media only screen and (min-width: 569px) and (max-width: 1023px) {
+  #clients .centerwrapper .client-items .item {
+    float: none;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 569px) and (max-width: 767px) {
+  #technologies .centerwrapper .tool-container {
+    width: 500px;
+  }
+  #technologies .centerwrapper .tool-container .tool-item {
+    width: 33%;
+  }
+  #technologies .centerwrapper .tool-container .tool-item .image-holder {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #portfolio #portfolio-container .grid-sizer,
+  #portfolio #portfolio-container .thumbnail {
     width: 47%;
   }
-  #clients .client-row .centerwrapper {
-    width: 97%;
-  }
-  #clients .client-row .centerwrapper .client-item {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
-  }
-  #technologies .centerwrapper {
-    width: 85%;
+  #about .centerwrapper .about-container {
+    width: 460px;
   }
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .navbar .container {
     margin-top: 0px;
   }
@@ -6382,7 +6392,7 @@ footer {
   }
   #lets-work img {
     margin-left: 0px;
-    width: 100%;
+    width: 50%;
   }
   #mantra {
     min-height: 300px;
@@ -6407,55 +6417,49 @@ footer {
   #mantra .carousel-caption .caption-subheader p {
     font-size: 16px;
   }
-  #services .service-container .service-row .centerwrapper {
-    width: 100% !important;
+}
+@media only screen and (max-width: 568px) {
+  #services .centerwrapper .service-row {
+    width: inherit;
   }
-  #services .service-container .service-row .service-item {
-    margin-bottom: 30px;
+  #services .centerwrapper .service-row .service-item {
+    width: 300px !important;
   }
-  #services .service-container .service-row .service-item .service-icon img {
-    width: 90%;
+  #services .centerwrapper .service-row .service-item .service-icon img {
+    width: 75%;
   }
-  #services .service-container .service-row .service-item .service-content {
+  #services .centerwrapper .service-row .service-item .service-content {
     margin-left: 80px;
   }
-  #services .service-container .service-row .service-item .service-content h4 {
+  #services .centerwrapper .service-row .service-item .service-content h4,
+  #services .centerwrapper .service-row .service-item .service-content p {
+    width: 200px;
     font-size: 14px;
   }
-  #services .service-container .service-row .service-item .service-content p {
-    font-size: 14px;
-    width: 185px;
-  }
-  #clients .client-row .centerwrapper {
-    width: 92% !important;
-  }
-  #clients .client-row .centerwrapper .client-item {
-    margin: 20px;
-    text-align: center;
-  }
-  #clients .client-row .centerwrapper .client-item img {
-    width: 240px;
-    height: 240px;
-  }
-  #technologies .centerwrapper {
-    width: 96%;
-  }
-  #technologies .centerwrapper .tool-item {
-    width: 72px;
-    height: 72px;
-    margin: 10px;
-    vertical-align: center;
-  }
-  #technologies .centerwrapper .tool-item img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+  #clients .centerwrapper .client-items .item {
+    float: none;
     margin: auto;
-    width: inherit;
-    padding: 14px;
+    width: 200px;
   }
-}
-@media only screen and (min-width: 320px) and (max-width: 568px) {
+  #clients .centerwrapper .client-items .item img {
+    width: 200px;
+  }
+  #technologies .centerwrapper .tool-container {
+    width: 300px;
+  }
+  #technologies .centerwrapper .tool-container .tool-item {
+    width: 33%;
+  }
+  #technologies .centerwrapper .tool-container .tool-item .image-holder {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #technologies .centerwrapper .tool-container .tool-item .image-holder img {
+    padding: 15px;
+  }
   #portfolio #portfolio-container {
     margin: 0 auto;
   }
@@ -6463,23 +6467,52 @@ footer {
   #portfolio #portfolio-container .thumbnail {
     width: 100%;
   }
-  #about .centerwrapper {
-    width: 100%;
+  #about .centerwrapper .about-container {
+    width: 280px;
   }
-  #about .centerwrapper .member {
+  #about .centerwrapper .about-container .member {
     margin: 20px;
     height: 200px;
   }
-  #about .centerwrapper .member .name {
+  #about .centerwrapper .about-container .member .name {
     width: 100px;
   }
-  #about .centerwrapper .member .name .photo1,
-  #about .centerwrapper .member .name .photo2 {
+  #about .centerwrapper .about-container .member .name .photo1,
+  #about .centerwrapper .about-container .member .name .photo2 {
     width: 100px;
     height: 100px;
   }
-  #about .centerwrapper .member .name .icon-container .icon {
+  #about .centerwrapper .about-container .member .name .icon-container .icon {
     width: 13px;
     height: 13px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* For ipad portrait layouts only */
+  .navbar .navbar-header {
+    float: none;
+    margin-bottom: 20px;
+  }
+  .navbar .navbar-header .navbar-brand {
+    float: none;
+  }
+  .navbar .navbar-header .navbar-brand img {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* For ipad portrait layouts only */
+  .navbar .navbar-header {
+    margin: 30px 0px 0px 0px;
+  }
+  .navbar .navbar-header .navbar-brand {
+    float: left;
+  }
+  .navbar .navbar-right li > a {
+    padding-right: 17px;
+    color: #05466c;
+  }
+  .navbar .container {
+    margin-top: 80px;
   }
 }
