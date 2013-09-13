@@ -5964,8 +5964,15 @@ body {
   margin-right: auto;
   padding-bottom: 40px;
 }
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
 .navbar {
   min-height: 150px;
+  margin-bottom: 0;
 }
 .navbar .navbar-right {
   font-size: 28px;
@@ -5975,7 +5982,7 @@ body {
   padding-right: 25px;
 }
 .navbar .navbar-header {
-  margin: 30px 25px 0 25px;
+  margin: 30px 25px 30px 25px;
 }
 .navbar .navbar-brand img {
   width: 100%;
@@ -5984,6 +5991,7 @@ body {
   margin-top: 80px;
 }
 #lets-work {
+  margin-top: 170px;
   min-height: 530px;
 }
 #lets-work .lets-work-text {
@@ -6419,6 +6427,19 @@ footer {
   }
 }
 @media only screen and (max-width: 568px) {
+  .navbar {
+    min-height: 96px;
+  }
+  .navbar .navbar-header .navbar-toggle {
+    margin-top: 0px;
+  }
+  .navbar .navbar-header .navbar-brand {
+    width: 170px;
+    padding: 0px;
+  }
+  .navbar .navbar-header .navbar-brand img {
+    float: left;
+  }
   #services .centerwrapper .service-row {
     width: inherit;
   }
