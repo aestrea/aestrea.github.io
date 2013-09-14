@@ -349,12 +349,12 @@ header {
 
     .thumbnail {
 
-      border-top-left-radius: 25px;
-      border-bottom-right-radius: 25px;
+      border-radius: 25px;
 
       background-color: #eef7ff;
       float: left;
       margin-bottom: 20px;
+
 
       img {
         height: 175px;
@@ -393,6 +393,7 @@ header {
       font-family: "Gloriola Thin";
       font-size: 18px;
       color: #767676;
+      padding-bottom: 20px;
     }
 
   }
@@ -454,6 +455,82 @@ header {
   }
 
 }
+
+#contact {
+  background-image: url("../../images/google-map.jpg");
+  height: 630px;
+  font-family: "Gloriola Std Regular";
+
+  .contact-container {
+    width: 560px;
+    height: auto;
+    background-color: #ffffff;
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+
+    .info-holder {
+
+      border-bottom: 1px solid #e9e9e9;
+
+      .info {
+        padding: 30px 30px 0;
+
+        .info-item {
+          height: auto;
+
+          img {
+            float: left;
+            width: 40px;
+          }
+          p {
+            margin-left: 50px;
+            font-size: 20px;
+            color: #5c5d5e;
+            padding: 10px;
+            height: auto;
+
+            a {
+              color: #6fb9e4;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .description {
+      padding: 30px;
+      font-size: 18px;
+      color: #88898a;
+    }
+
+    .get-in-touch {
+      height: 90px;
+      background-color: #1b94e0;
+      padding: 20px;
+
+      .email-link {
+
+        img {
+          float: left;
+          margin-bottom: 7px;
+          margin-top: 7px;
+        }
+
+        p {
+          font-family: "Gloriola Std Light";
+          color: #ffffff;
+          margin-left: 50px;
+          font-size: 30px;
+
+        }
+      }
+    }
+
+  }
+}
+
 
 .divider {
   border-top: 1px solid #9fadae;
@@ -689,7 +766,23 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+
   .navbar {
+    min-height: 96px;
+    .navbar-header {
+
+      .navbar-toggle {
+        margin-top: 0px;
+      }
+      .navbar-brand {
+        width: 170px;
+
+        padding: 0px;
+        img {
+          float: left;
+        }
+      }
+    }
     .container {
       margin-top: 0px;
     }
@@ -697,6 +790,7 @@ footer {
 
   #lets-work {
 
+    margin-top: 80px;
     .lets-work-text {
 
       .lets-work-header {
@@ -755,25 +849,21 @@ footer {
 
 }
 
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 950px) {
+  #contact {
+    padding-top: 40px;
 
-  .navbar {
-    min-height: 96px;
-    .navbar-header {
-
-      .navbar-toggle {
-        margin-top: 0px;
-      }
-      .navbar-brand {
-        width: 170px;
-
-        padding: 0px;
-        img {
-          float: left;
-        }
-      }
+    .contact-container {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
     }
   }
+}
+
+@media only screen and (max-width: 568px) {
+
   #services {
     .centerwrapper {
       .service-row {
@@ -839,10 +929,17 @@ footer {
   #portfolio {
     #portfolio-container {
 
-      margin: 0 auto;
+      margin-left: 8px;
 
       .grid-sizer, .thumbnail {
-        width: 100%;
+        width: 46%;
+        img {
+          width: 100px;
+          height: auto;
+        }
+        .content {
+          word-wrap: break-word;
+        }
       }
     }
   }
@@ -878,7 +975,34 @@ footer {
   }
 }
 
+@media only screen and (max-width: 580px) {
+  #contact {
+    .contact-container {
+      width: 300px;
 
+      .info-holder {
+        .info {
+          padding: 30px 20px 0px;
+          .info-item {
+
+            img {
+              width: 30px;
+            }
+            p {
+              font-size: 14px;
+              margin-left: 30px;
+            }
+
+          }
+        }
+      }
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
   /* For ipad portrait layouts only */
   .navbar {
