@@ -37,7 +37,7 @@ module.exports = (grunt) ->
       serve:
         options:
           port: grunt.option('port') || '8000'
-          hostname: grunt.option('host') || 'localhost'
+          hostname: grunt.option('host') || '0.0.0.0'
     assemble:
       pages:
         options:

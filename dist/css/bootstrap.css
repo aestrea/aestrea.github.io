@@ -5969,8 +5969,19 @@ header {
   width: 100%;
   z-index: 100;
   top: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+header .container {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .navbar {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
   min-height: 150px;
   margin-bottom: 0;
 }
@@ -5986,6 +5997,9 @@ header {
 }
 .navbar .navbar-brand img {
   width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .navbar .container {
   margin-top: 80px;
@@ -6186,9 +6200,15 @@ header {
   background-color: #eef7ff;
   float: left;
   margin-bottom: 20px;
+  padding: 1px;
 }
 #portfolio #portfolio-container .thumbnail img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   height: 175px;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 #portfolio #portfolio-container .thumbnail .content {
   padding-left: 10px;
@@ -6235,19 +6255,18 @@ header {
   font-size: 14px;
 }
 #about .centerwrapper .about-container .member-row .member .name .photo1,
-#about .centerwrapper .about-container .member-row .member .name .photo2 {
+#about .centerwrapper .about-container .member-row .member .name .photo2,
+#about .centerwrapper .about-container .member-row .member .name .photo-default {
   width: 150px;
   height: 150px;
 }
 #about .centerwrapper .about-container .member-row .member .name .photo1 img,
-#about .centerwrapper .about-container .member-row .member .name .photo2 img {
+#about .centerwrapper .about-container .member-row .member .name .photo2 img,
+#about .centerwrapper .about-container .member-row .member .name .photo-default img {
   width: 150px;
   height: 150px;
 }
-#about .centerwrapper .about-container .member-row .member .name .photo1 {
-  background-color: #dce1e1;
-}
-#about .centerwrapper .about-container .member-row .member .name .photo2 {
+#about .centerwrapper .about-container .member-row .member .name .photo-default {
   background-color: #dce1e1;
 }
 #about .centerwrapper .about-container .member-row .member .name .icon-container {
@@ -6332,6 +6351,15 @@ header {
 footer {
   min-height: 180px;
   background-image: url("../../images/footer.jpg");
+}
+@media only screen and (min-width: 768px) and (max-width: 914px) {
+  .ha-header-small .navbar .navbar-right {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .ha-header-small .navbar .navbar-right li > a {
+    padding-right: 4px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
   #mantra .carousel-inner .item img {
@@ -6459,21 +6487,37 @@ footer {
   }
 }
 @media only screen and (max-width: 767px) {
-  .navbar {
-    min-height: 96px;
+  .ha-header .container {
+    background: rgba(250, 250, 250, 0.9);
   }
-  .navbar .navbar-header .navbar-toggle {
-    margin-top: 0px;
+  .ha-header .container .navbar-default {
+    background: transparent;
   }
-  .navbar .navbar-header .navbar-brand {
+  .ha-header .container .navbar {
+    min-height: 0px;
+  }
+  .ha-header .container .navbar .navbar-header {
+    margin: 10px 25px;
+  }
+  .ha-header .container .navbar .navbar-header .navbar-brand {
     width: 170px;
     padding: 0px;
   }
-  .navbar .navbar-header .navbar-brand img {
+  .ha-header .container .navbar .navbar-header .navbar-brand img {
     float: left;
   }
-  .navbar .container {
+  .ha-header .container .navbar .container {
     margin-top: 0px;
+  }
+  .ha-header .container .navbar .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .ha-header .container .navbar .navbar-right {
+    font-size: 20px;
+  }
+  .ha-header .container .navbar .navbar-collapse .container {
+    background: transparent;
   }
   #lets-work {
     margin-top: 80px;
@@ -6533,7 +6577,8 @@ footer {
     width: 300px !important;
   }
   #services .centerwrapper .service-row .service-item .service-icon img {
-    width: 75%;
+    width: 60px;
+    height: 60px;
   }
   #services .centerwrapper .service-row .service-item .service-content {
     margin-left: 80px;
@@ -6572,16 +6617,24 @@ footer {
   }
   #portfolio #portfolio-container .grid-sizer,
   #portfolio #portfolio-container .thumbnail {
+    border-radius: 8px;
+    padding: 1px;
     width: 46%;
   }
   #portfolio #portfolio-container .grid-sizer img,
   #portfolio #portfolio-container .thumbnail img {
-    width: 100px;
+    width: 100%;
     height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
   #portfolio #portfolio-container .grid-sizer .content,
   #portfolio #portfolio-container .thumbnail .content {
     word-wrap: break-word;
+  }
+  #portfolio #portfolio-container .grid-sizer .content p,
+  #portfolio #portfolio-container .thumbnail .content p {
+    font-size: 12px;
   }
   #about .centerwrapper .about-container .member-row {
     width: 280px;
@@ -6594,12 +6647,14 @@ footer {
     width: 100px;
   }
   #about .centerwrapper .about-container .member-row .member .name .photo1,
-  #about .centerwrapper .about-container .member-row .member .name .photo2 {
+  #about .centerwrapper .about-container .member-row .member .name .photo2,
+  #about .centerwrapper .about-container .member-row .member .name .photo-default {
     width: 100px;
     height: 100px;
   }
   #about .centerwrapper .about-container .member-row .member .name .photo1 img,
-  #about .centerwrapper .about-container .member-row .member .name .photo2 img {
+  #about .centerwrapper .about-container .member-row .member .name .photo2 img,
+  #about .centerwrapper .about-container .member-row .member .name .photo-default img {
     width: 100px;
     height: 100px;
   }
@@ -6629,6 +6684,30 @@ footer {
     font-size: 14px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .ha-header-small .container {
+    background: rgba(250, 250, 250, 0.9);
+  }
+  .ha-header-small .container .navbar-default {
+    background: transparent;
+  }
+  .ha-header-small .container .navbar {
+    min-height: 0px;
+  }
+  .ha-header-small .container .navbar .navbar-header {
+    margin: 0px 25px !important;
+  }
+  .ha-header-small .container .navbar .navbar-header .navbar-brand img {
+    width: 150px !important;
+  }
+  .ha-header-small .container .navbar .navbar-collapse .container {
+    margin-top: 5px;
+    background: transparent;
+  }
+  .ha-header-large .navbar .navbar-brand img {
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   /* For ipad portrait layouts only */
   .navbar .navbar-header {
@@ -6641,6 +6720,12 @@ footer {
   .navbar .navbar-header .navbar-brand img {
     width: 30%;
   }
+  .ha-header-small .navbar .navbar-header {
+    float: left;
+  }
+  .ha-header-small .navbar .navbar-header .navbar-brand {
+    float: left;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* For ipad portrait layouts only */
@@ -6650,11 +6735,20 @@ footer {
   .navbar .navbar-header .navbar-brand {
     float: left;
   }
+  .navbar .navbar-header .navbar-brand img {
+    width: 250px;
+  }
   .navbar .navbar-right li > a {
     padding-right: 17px;
     color: #05466c;
   }
   .navbar .container {
     margin-top: 80px;
+  }
+  .ha-header-small .navbar .navbar-header .navbar-brand img {
+    width: 150px !important;
+  }
+  .ha-header-large .navbar .navbar-brand img {
+    width: 250px;
   }
 }
