@@ -6339,9 +6339,12 @@ header .container {
 }
 #contact .contact-container .get-in-touch .email-link p {
   font-family: "Gloriola Std Light";
-  color: #ffffff;
   margin-left: 50px;
   font-size: 30px;
+}
+#contact .contact-container .get-in-touch .email-link p a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .divider {
   border-top: 1px solid #9fadae;
