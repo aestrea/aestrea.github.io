@@ -6196,15 +6196,15 @@ header .container {
   float: left;
 }
 #portfolio #portfolio-container .thumbnail {
-  border-radius: 25px;
-  background-color: #eef7ff;
+  border-radius: 3px;
+  background-color: #f5fbff;
   float: left;
   margin-bottom: 20px;
   padding: 1px;
 }
 #portfolio #portfolio-container .thumbnail img {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   height: 175px;
   width: 100%;
   margin-left: 0px;
@@ -6617,7 +6617,6 @@ footer {
   }
   #portfolio #portfolio-container .grid-sizer,
   #portfolio #portfolio-container .thumbnail {
-    border-radius: 8px;
     padding: 1px;
     width: 46%;
   }
@@ -6625,8 +6624,6 @@ footer {
   #portfolio #portfolio-container .thumbnail img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
   }
   #portfolio #portfolio-container .grid-sizer .content,
   #portfolio #portfolio-container .thumbnail .content {
