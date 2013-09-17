@@ -6254,17 +6254,54 @@ header .container {
   font-family: "Gloriola Std Light";
   font-size: 14px;
 }
-#about .centerwrapper .about-container .member-row .member .name .photo1,
-#about .centerwrapper .about-container .member-row .member .name .photo2,
-#about .centerwrapper .about-container .member-row .member .name .photo-default {
+#about .centerwrapper .about-container .member-row .member .name .flip {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+#about .centerwrapper .about-container .member-row .member .name .flip .photo {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+#about .centerwrapper .about-container .member-row .member .name .flip .photo .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden ;
+  z-index: 2;
+}
+#about .centerwrapper .about-container .member-row .member .name .flip .photo .front {
+  z-index: 1;
+}
+#about .centerwrapper .about-container .member-row .member .name .flip .photo .back {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+#about .centerwrapper .about-container .member-row .member .name .flip .photo .back img {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+#about .centerwrapper .about-container .member-row .member .name .flip .photo .front,
+#about .centerwrapper .about-container .member-row .member .name .flip .photo .back,
+#about .centerwrapper .about-container .member-row .member .name .flip .photo .photo-default {
   width: 150px;
   height: 150px;
 }
-#about .centerwrapper .about-container .member-row .member .name .photo1 img,
-#about .centerwrapper .about-container .member-row .member .name .photo2 img,
-#about .centerwrapper .about-container .member-row .member .name .photo-default img {
+#about .centerwrapper .about-container .member-row .member .name .flip .photo .front img,
+#about .centerwrapper .about-container .member-row .member .name .flip .photo .back img,
+#about .centerwrapper .about-container .member-row .member .name .flip .photo .photo-default img {
   width: 150px;
   height: 150px;
+}
+#about .centerwrapper .about-container .member-row .member .name .flip:hover .photo {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 #about .centerwrapper .about-container .member-row .member .name .photo-default {
   background-color: #dce1e1;
@@ -6646,15 +6683,19 @@ footer {
   #about .centerwrapper .about-container .member-row .member .name {
     width: 100px;
   }
-  #about .centerwrapper .about-container .member-row .member .name .photo1,
-  #about .centerwrapper .about-container .member-row .member .name .photo2,
-  #about .centerwrapper .about-container .member-row .member .name .photo-default {
+  #about .centerwrapper .about-container .member-row .member .name .flip {
     width: 100px;
     height: 100px;
   }
-  #about .centerwrapper .about-container .member-row .member .name .photo1 img,
-  #about .centerwrapper .about-container .member-row .member .name .photo2 img,
-  #about .centerwrapper .about-container .member-row .member .name .photo-default img {
+  #about .centerwrapper .about-container .member-row .member .name .flip .photo .front,
+  #about .centerwrapper .about-container .member-row .member .name .flip .photo .back,
+  #about .centerwrapper .about-container .member-row .member .name .flip .photo .photo-default {
+    width: 100px;
+    height: 100px;
+  }
+  #about .centerwrapper .about-container .member-row .member .name .flip .photo .front img,
+  #about .centerwrapper .about-container .member-row .member .name .flip .photo .back img,
+  #about .centerwrapper .about-container .member-row .member .name .flip .photo .photo-default img {
     width: 100px;
     height: 100px;
   }

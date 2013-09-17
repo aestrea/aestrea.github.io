@@ -446,23 +446,63 @@ header {
               font-family: "Gloriola Std Light";
               font-size: 14px;
             }
-            .photo1, .photo2, .photo-default {
+
+            .flip {
+
               width: 150px;
               height: 150px;
+              position: relative;
 
-              img {
-                width: 150px;
-                height: 150px;
+              .photo {
+
+                width: 100%;
+                height: 100%;
+                -webkit-transform-style: preserve-3d;
+                -webkit-transition: 0.5s;
+
+                .face {
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  -webkit-backface-visibility: hidden ;
+                  z-index: 2;
+                }
+
+                .front {
+                  z-index: 1;
+                }
+
+                .back {
+                  -webkit-transform: rotateY(-180deg);
+                  transform: rotateY(-180deg);
+                  img {
+                    -moz-transform: scaleX(-1);
+                    -o-transform: scaleX(-1);
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                    filter: FlipH;
+                    -ms-filter: "FlipH";
+                  }
+                }
+
+                .front, .back, .photo-default {
+                  width: 150px;
+                  height: 150px;
+
+                  img {
+                    width: 150px;
+                    height: 150px;
+                  }
+                }
               }
+
+
+              &:hover .photo {
+                -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+              }
+
             }
-//            .photo1 {
-//  //            background-color: #9fadae;
-//              background-color: #dce1e1;
-//            }
-//
-//            .photo2 {
-//              background-color: #dce1e1;
-//            }
 
             .photo-default {
               background-color: #dce1e1;
@@ -1067,15 +1107,25 @@ footer {
 
             .name {
               width: 100px;
-              .photo1, .photo2, .photo-default {
+
+              .flip {
                 width: 100px;
                 height: 100px;
 
-                img {
-                  width: 100px;
-                  height: 100px;
+                .photo {
+
+                  .front, .back, .photo-default {
+                    width: 100px;
+                    height: 100px;
+
+                    img {
+                      width: 100px;
+                      height: 100px;
+                    }
+                  }
                 }
               }
+
               .icon-container {
                 .icon {
                   width: 13px;
