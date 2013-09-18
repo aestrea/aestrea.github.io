@@ -6067,6 +6067,7 @@ header .container {
   height: 455px !important;
 }
 #tagline {
+  min-height: 455px;
   max-height: 455px;
 }
 #mantra {
@@ -6656,6 +6657,7 @@ footer {
 }
 @media only screen and (max-width: 568px) {
   #tagline {
+    min-height: 300px;
     max-height: 300px;
   }
   .nivoSlider img {
