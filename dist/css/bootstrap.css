@@ -6428,9 +6428,19 @@ header .container {
   height: 0px;
   margin: 10px 0px;
 }
-footer {
-  min-height: 180px;
+footer .container {
   background-image: url("../../images/footer.jpg");
+  height: 180px;
+}
+footer .copyright {
+  text-align: center;
+  padding-top: 50px;
+}
+footer .copyright p {
+  font-family: "Gloriola Std Light";
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media only screen and (min-width: 768px) and (max-width: 914px) {
   .ha-header-small .navbar .navbar-right {
