@@ -6,6 +6,8 @@
   <title>Aestrea Software Development</title>
   <meta name="viewport" content="initial-scale=1.0, width=device-width" width="1062px, user-scaleable=yes">
   <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" href="dist/css/themes/default/default.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="dist/css/nivo-slider.css" type="text/css" media="screen" />
   <link rel="shortcut icon" type="image/ico" href="/images/favicon.ico" />
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
@@ -72,70 +74,100 @@
 
             </div>
 
-            <div id="mantra" class="carousel slide">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#mantra" data-slide-to="0" class="active"></li>
-                    <li data-target="#mantra" data-slide-to="1"></li>
-                    <li data-target="#mantra" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="images/sun.jpg"/>
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Driven by Power.</h1>
-                                <div class="caption-subheader">
-                                    <div class="overlay"></div>
-                                    <p> Power is what we need to move things around. It is our catalyst.
-                                        What lies in our will is the creative power to make a positive and significant change to the world.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/fire.jpg"/>
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Burning with Passion.</h1>
-                                <div class="caption-subheader">
-                                    <div class="overlay"></div>
-                                    <p> Passion energizes us. It is what carries our team to the top with boundless enthusiasm.
-                                        It is the fire that fuels us to keep moving forward and to do the best in whatever we do.
-                                    </p>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="images/plant.jpg"/>
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Desire to Create.</h1>
-                                <div class="caption-subheader">
-                                    <div class="overlay"></div>
-                                    <p>Our desire for creation and success can never be satisfied. When we desire, we aspire with our whole heart.
-                                        We create with quality and we deliver with character.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-
-
+            <div id="tagline" class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="images/sun.jpg" data-thumb="images/sun.jpg" alt="" title="#driven-by-power" />
+                    <img src="images/fire.jpg" data-thumb="images/fire.jpg" alt="" title="#burning-with-passion" />
+                    <img src="images/plant.jpg" data-thumb="images/plant.jpg" alt="" title="#desire-to-create" />
                 </div>
-
-                <a class="left carousel-control" href="#mantra" data-slide="prev">
-                    <span class="icon-prev"></span>
-                </a>
-                <a class="right carousel-control" href="#mantra" data-slide="next">
-                    <span class="icon-next"></span>
-                </a>
-                <!-- Controls -->
-
+                <div id="htmlcaption" class="nivo-html-caption">
+                    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+                </div>
+                <div id="driven-by-power" class="nivo-html-caption">
+                    <h1>Driven by Power.</h1>
+                    <p> Power is what we need to move things around. It is our catalyst.
+                        What lies in our will is the creative power to make a positive and significant change to the world.
+                    </p>
+                </div>
+                <div id="burning-with-passion" class="nivo-html-caption">
+                    <h1>Burning with Passion.</h1>
+                    <p> Passion energizes us. It is what carries our team to the top with boundless enthusiasm.
+                        It is the fire that fuels us to keep moving forward and to do our best.
+                    </p>
+                </div>
+                <div id="desire-to-create" class="nivo-html-caption">
+                    <h1>Desire to Create.</h1>
+                    <p> Our desire for creation and success can never be satisfied. When we desire, we aspire with our whole heart.
+                        We create with quality and we deliver with character.
+                    </p>
+                </div>
             </div>
+
+            <!--<div id="mantra" class="carousel slide">-->
+                <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+                <!--<ol class="carousel-indicators">-->
+                    <!--<li data-target="#mantra" data-slide-to="0" class="active"></li>-->
+                    <!--<li data-target="#mantra" data-slide-to="1"></li>-->
+                    <!--<li data-target="#mantra" data-slide-to="2"></li>-->
+                <!--</ol>-->
+                <!--<div class="carousel-inner">-->
+                    <!--<div class="item active">-->
+                        <!--<img src="images/sun.jpg"/>-->
+                        <!--<div class="container">-->
+                            <!--<div class="carousel-caption">-->
+                                <!--<h1>Driven by Power.</h1>-->
+                                <!--<div class="caption-subheader">-->
+                                    <!--<div class="overlay"></div>-->
+                                    <!--<p> Power is what we need to move things around. It is our catalyst.-->
+                                        <!--What lies in our will is the creative power to make a positive and significant change to the world.-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="item">-->
+                        <!--<img src="images/fire.jpg"/>-->
+                        <!--<div class="container">-->
+                            <!--<div class="carousel-caption">-->
+                                <!--<h1>Burning with Passion.</h1>-->
+                                <!--<div class="caption-subheader">-->
+                                    <!--<div class="overlay"></div>-->
+                                    <!--<p> Passion energizes us. It is what carries our team to the top with boundless enthusiasm.-->
+                                        <!--It is the fire that fuels us to keep moving forward and to do the best in whatever we do.-->
+                                    <!--</p>-->
+                                 <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="item">-->
+                        <!--<img src="images/plant.jpg"/>-->
+                        <!--<div class="container">-->
+                            <!--<div class="carousel-caption">-->
+                                <!--<h1>Desire to Create.</h1>-->
+                                <!--<div class="caption-subheader">-->
+                                    <!--<div class="overlay"></div>-->
+                                    <!--<p>Our desire for creation and success can never be satisfied. When we desire, we aspire with our whole heart.-->
+                                        <!--We create with quality and we deliver with character.-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+
+
+                <!--</div>-->
+
+                <!--<a class="left carousel-control" href="#mantra" data-slide="prev">-->
+                    <!--<span class="icon-prev"></span>-->
+                <!--</a>-->
+                <!--<a class="right carousel-control" href="#mantra" data-slide="next">-->
+                    <!--<span class="icon-next"></span>-->
+                <!--</a>-->
+                <!--&lt;!&ndash; Controls &ndash;&gt;-->
+
+            <!--</div>-->
             <!-- /.carousel -->
 
 
@@ -741,6 +773,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
     <script src="dist/js/waypoints.min.js"></script>
     <script src="dist/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery.nivo.slider.js"></script>
     <script>window.jQuery || document.write('<script src="assets/jquery/jquery.js"><\/script>')</script>
 
     <script src="assets/js/masonry.pkgd.min.js"></script>
@@ -790,6 +823,26 @@
                 navbar_toggle.trigger('click');
             }
         });
+
     </script>
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider( {
+                animSpeed:500, // Slide transition speed
+                pauseTime:3000, // How long each slide will show
+                startSlide:0, // Set starting Slide (0 index)
+                controlNav:true,
+                directionNav:true, // Next & Prev navigation
+                directionNavHide:false, // Only show on hover
+                keyboardNav:true, // Use left & right arrows
+                pauseOnHover:false, // Stop animation while hovering
+                manualAdvance:false, // Force manual transitions
+                prevText: 'Prev', // Prev directionNav text
+                nextText: 'Next' // Next directionNav text
+            });
+        });
+    </script>
+
 </body>
 </html>

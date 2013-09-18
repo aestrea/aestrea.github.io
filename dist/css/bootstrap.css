@@ -6033,6 +6033,42 @@ header .container {
   margin-top: 20px;
   margin-left: -25px;
 }
+.nivoSlider {
+  margin-bottom: 0px !important;
+}
+.nivoSlider img {
+  height: 455px !important;
+  width: auto !important;
+}
+.nivo-caption {
+  top: 25%;
+  left: 20% !important;
+  right: 20% !important;
+  width: 60% !important;
+  padding: 5px 15px !important;
+  opacity: 0.6 !important;
+}
+.nivo-caption h1 {
+  text-align: center;
+  font-family: "Gloriola Std Regular";
+  font-size: 46px;
+}
+.nivo-caption p {
+  font-family: "Gloriola Std Regular";
+  font-size: 28px;
+  text-align: center;
+}
+.nivo-controlNav {
+  position: relative;
+  top: -45px;
+  z-index: 5;
+}
+.nivo-slice {
+  height: 455px !important;
+}
+#tagline {
+  max-height: 455px;
+}
 #mantra {
   min-height: 455px;
 }
@@ -6263,13 +6299,16 @@ header .container {
   width: 100%;
   height: 100%;
   -webkit-transform-style: preserve-3d;
+  transform: preserve-3d;
   -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 #about .centerwrapper .about-container .member-row .member .name .flip .photo .face {
   width: 100%;
   height: 100%;
   position: absolute;
   -webkit-backface-visibility: hidden ;
+  backface-visibility: hidden;
   z-index: 2;
 }
 #about .centerwrapper .about-container .member-row .member .name .flip .photo .front {
@@ -6504,6 +6543,12 @@ footer {
   }
 }
 @media only screen and (min-width: 569px) and (max-width: 767px) {
+  .nivo-caption h1 {
+    font-size: 32px;
+  }
+  .nivo-caption p {
+    font-size: 22px;
+  }
   #technologies .centerwrapper .tool-container {
     width: 500px;
   }
@@ -6610,6 +6655,24 @@ footer {
   }
 }
 @media only screen and (max-width: 568px) {
+  #tagline {
+    max-height: 300px;
+  }
+  .nivoSlider img {
+    height: 300px !important;
+  }
+  .nivo-caption {
+    top: 15%;
+  }
+  .nivo-caption h1 {
+    font-size: 18px;
+  }
+  .nivo-caption p {
+    font-size: 14px;
+  }
+  .nivo-slice {
+    height: 300px !important;
+  }
   #services .centerwrapper .service-row {
     width: inherit;
   }
