@@ -6174,14 +6174,40 @@ header .container {
   /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 
 }
-#clients .centerwrapper .client-items .item img:hover {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(0%);
+#clients .centerwrapper .client-items .item .client-description-container {
+  height: 60px;
+  width: 300px;
+  overflow: hidden;
+  margin: 0 auto;
 }
-#clients .centerwrapper .client-items .item p {
+#clients .centerwrapper .client-items .item .client-description-container .client-description-holder {
+  height: 120px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+#clients .centerwrapper .client-items .item .client-description-container .client-description-holder .client-name {
+  text-align: center;
+  height: 60px;
   font-family: "Gloriola Std Regular";
   font-size: 20px;
   margin-top: 20px;
+}
+#clients .centerwrapper .client-items .item .client-description-container .client-description-holder .client-description {
+  text-align: center;
+  font-family: "Gloriola Thin";
+  font-size: 14px;
+  height: 60px;
+  width: 300px;
+}
+#clients .centerwrapper .client-items .item:hover img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+#clients .centerwrapper .client-items .item:hover .client-description-holder {
+  -webkit-transform: translateY(-60px);
+  transform: translateY(-60px);
 }
 #technologies {
   background-color: #f3ffeb;
@@ -6721,6 +6747,13 @@ footer .copyright p {
     width: 200px;
   }
   #clients .centerwrapper .client-items .item img {
+    width: 200px;
+  }
+  #clients .centerwrapper .client-items .item .client-description-container {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  #clients .centerwrapper .client-items .item .client-description-container .client-description-holder .client-description {
     width: 200px;
   }
   #technologies .centerwrapper .tool-container {

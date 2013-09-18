@@ -333,18 +333,48 @@ header {
         width: 300px;
 
         img {
-
           .grayscale;
+        }
 
-          &:hover {
-            .grayscale.disabled;
+        .client-description-container {
+          height: 60px;
+          width: 300px;
+          overflow: hidden;
+          margin: 0 auto;
+
+          .client-description-holder {
+            height: 120px;
+
+            -webkit-transition:all 1.0s ease-in-out;
+            -moz-transition:all 1.0s ease-in-out;
+            -o-transition:all 1.0s ease-in-out;
+            transition:all 1.0s ease-in-out;
+
+            .client-name {
+              text-align: center;
+              height: 60px;
+              font-family: "Gloriola Std Regular";
+              font-size: 20px;
+              margin-top: 20px;
+            }
+            .client-description {
+              text-align: center;
+              font-family: "Gloriola Thin";
+              font-size: 14px;
+              height: 60px;
+              width: 300px;
+            }
           }
         }
 
-        p {
-          font-family: "Gloriola Std Regular";
-          font-size: 20px;
-          margin-top: 20px;
+        &:hover {
+          img {
+            .grayscale.disabled;
+          }
+          .client-description-holder {
+            -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+          }
         }
       }
     }
@@ -1154,6 +1184,15 @@ footer {
       width: 200px;
       img {
         width: 200px;
+      }
+
+      .client-description-container {
+        width: 200px;
+        margin-bottom: 20px;
+
+        .client-description-holder .client-description {
+            width: 200px;
+        }
       }
     }
   }
