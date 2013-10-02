@@ -339,13 +339,13 @@ header {
         }
 
         .client-description-container {
-          height: 60px;
+          height: 90px;
           width: 300px;
           overflow: hidden;
           margin: 0 auto;
 
           .client-description-holder {
-            height: 120px;
+            height: 180px;
 
             -webkit-transition:all 1.0s ease-in-out;
             -moz-transition:all 1.0s ease-in-out;
@@ -354,7 +354,7 @@ header {
 
             .client-name {
               text-align: center;
-              height: 60px;
+              height: 90px;
               font-family: "Gloriola Std Regular";
               font-size: 20px;
               margin-top: 20px;
@@ -362,8 +362,8 @@ header {
             .client-description {
               text-align: center;
               font-family: "Gloriola Thin";
-              font-size: 14px;
-              height: 60px;
+              font-size: 16px;
+              height: 90px;
               width: 300px;
             }
           }
@@ -374,8 +374,8 @@ header {
             .grayscale.disabled;
           }
           .client-description-holder {
-            -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
+            -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
           }
         }
       }
@@ -1195,6 +1195,16 @@ footer {
 
         .client-description-holder .client-description {
             width: 200px;
+        }
+
+        .client-description-holder {
+          .client-name {
+            margin-top: 5px;
+          }
+
+          .client-description {
+            font-size: 14px;
+          }
         }
       }
     }

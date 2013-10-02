@@ -6176,13 +6176,13 @@ header .container {
 
 }
 #clients .centerwrapper .client-items .item .client-description-container {
-  height: 60px;
+  height: 90px;
   width: 300px;
   overflow: hidden;
   margin: 0 auto;
 }
 #clients .centerwrapper .client-items .item .client-description-container .client-description-holder {
-  height: 120px;
+  height: 180px;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
@@ -6190,7 +6190,7 @@ header .container {
 }
 #clients .centerwrapper .client-items .item .client-description-container .client-description-holder .client-name {
   text-align: center;
-  height: 60px;
+  height: 90px;
   font-family: "Gloriola Std Regular";
   font-size: 20px;
   margin-top: 20px;
@@ -6198,8 +6198,8 @@ header .container {
 #clients .centerwrapper .client-items .item .client-description-container .client-description-holder .client-description {
   text-align: center;
   font-family: "Gloriola Thin";
-  font-size: 14px;
-  height: 60px;
+  font-size: 16px;
+  height: 90px;
   width: 300px;
 }
 #clients .centerwrapper .client-items .item:hover img {
@@ -6207,8 +6207,8 @@ header .container {
   -webkit-filter: grayscale(0%);
 }
 #clients .centerwrapper .client-items .item:hover .client-description-holder {
-  -webkit-transform: translateY(-60px);
-  transform: translateY(-60px);
+  -webkit-transform: translateY(-90px);
+  transform: translateY(-90px);
 }
 #technologies {
   background-color: #f3ffeb;
@@ -6756,6 +6756,12 @@ footer .copyright p {
   }
   #clients .centerwrapper .client-items .item .client-description-container .client-description-holder .client-description {
     width: 200px;
+  }
+  #clients .centerwrapper .client-items .item .client-description-container .client-description-holder .client-name {
+    margin-top: 5px;
+  }
+  #clients .centerwrapper .client-items .item .client-description-container .client-description-holder .client-description {
+    font-size: 14px;
   }
   #technologies .centerwrapper .tool-container {
     width: 300px;
