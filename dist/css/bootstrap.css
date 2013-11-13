@@ -5996,7 +5996,7 @@ header .container {
   margin: 30px 25px 30px 25px;
 }
 .navbar .navbar-brand img {
-  width: 100%;
+  width: 300px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -6331,8 +6331,12 @@ header .container {
   width: 100%;
   height: 100%;
   -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
   transform: preserve-3d;
   -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 #about .centerwrapper .about-container .member-row .member .name .flip .photo .face {
@@ -6340,6 +6344,8 @@ header .container {
   height: 100%;
   position: absolute;
   -webkit-backface-visibility: hidden ;
+  -moz-backface-visibility: hidden ;
+  -o-backface-visibility: hidden ;
   backface-visibility: hidden;
   z-index: 2;
 }
@@ -6348,6 +6354,8 @@ header .container {
 }
 #about .centerwrapper .about-container .member-row .member .name .flip .photo .back {
   -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 #about .centerwrapper .about-container .member-row .member .name .flip .photo .back img {
@@ -6372,6 +6380,8 @@ header .container {
 }
 #about .centerwrapper .about-container .member-row .member .name .flip:hover .photo {
   -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 #about .centerwrapper .about-container .member-row .member .name .photo-default {
@@ -6873,7 +6883,7 @@ footer .copyright p {
     background: transparent;
   }
   .ha-header-large .navbar .navbar-brand img {
-    width: 100%;
+    width: 300px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
