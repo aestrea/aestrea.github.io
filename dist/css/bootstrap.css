@@ -5995,6 +5995,11 @@ header .container {
 .navbar .navbar-header {
   margin: 30px 25px 30px 25px;
 }
+.navbar .navbar-brand .helper {
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
 .navbar .navbar-brand img {
   width: 300px;
   -webkit-transition: all 0.5s;
@@ -6015,7 +6020,7 @@ header .container {
   float: left;
 }
 #lets-work .lets-work-text .lets-work-header {
-  max-width: 640px;
+  max-width: 643px;
   max-height: 146px;
   font-family: "Gloriola Std Regular";
   font-size: 53px;
@@ -6119,6 +6124,19 @@ header .container {
   color: #ffffff;
   width: 100%;
 }
+#services .subheader {
+  padding-bottom: 20px;
+}
+#services .subheader p {
+  margin: 0 auto;
+  width: 70%;
+  font-family: "Gloriola Thin";
+  font-size: 18px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #DBE7FF;
+  border-top: 1px solid #DBE7FF;
+}
 #services .centerwrapper .service-row {
   margin: auto;
   width: 960px;
@@ -6151,6 +6169,19 @@ header .container {
   background-color: #abd58f !important;
   color: #ffffff;
   width: 100%;
+}
+#clients .subheader {
+  padding-bottom: 20px;
+}
+#clients .subheader p {
+  margin: 0 auto;
+  width: 70%;
+  font-family: "Gloriola Thin";
+  font-size: 18px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #D9FFC0;
+  border-top: 1px solid #D9FFC0;
 }
 #clients .centerwrapper .header {
   color: #ffffff;
@@ -6295,7 +6326,6 @@ header .container {
 }
 #about .header {
   color: #34688d;
-  margin-bottom: 20px;
 }
 #about .subheader p {
   margin: 0 auto;
@@ -6304,6 +6334,9 @@ header .container {
   font-size: 18px;
   color: #767676;
   padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 #about .centerwrapper .about-container .member-row {
   width: 920px;
@@ -6639,14 +6672,14 @@ footer .copyright p {
     min-height: 0px;
   }
   .ha-header .container .navbar .navbar-header {
-    margin: 10px 25px;
+    margin: 10px 10px;
   }
   .ha-header .container .navbar .navbar-header .navbar-brand {
     width: 170px;
     padding: 0px;
   }
   .ha-header .container .navbar .navbar-header .navbar-brand img {
-    float: left;
+    width: 150px;
   }
   .ha-header .container .navbar .container {
     margin-top: 0px;
