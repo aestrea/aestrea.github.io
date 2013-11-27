@@ -5936,6 +5936,13 @@ td.visible-print {
   src: url('../fonts/gloriola_std_semibold-webfont.eot');
   src: url('../fonts/gloriola_std_semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gloriola_std_semibold-webfont.woff') format('woff'), url('../fonts/gloriola_std_semibold-webfont.ttf') format('truetype'), url('../fonts/gloriola_std_semibold-webfont.svg#gloriola_std_semibold-webfont') format('svg');
 }
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Gloriola Thin";
   background-color: #2A2A2A;
@@ -5957,7 +5964,11 @@ body {
 }
 .container {
   background-color: #FAFAFA;
-  max-width: 1280px;
+  max-width: 100%;
+}
+.content-container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .centerwrapper {
   margin-left: auto;
@@ -6012,6 +6023,10 @@ header .container {
 #lets-work {
   margin-top: 170px;
   min-height: 530px;
+  padding-bottom: 40px;
+}
+#lets-work .content-container {
+  max-width: 1280px;
 }
 #lets-work .lets-work-text {
   padding-left: 25px;
@@ -6029,7 +6044,7 @@ header .container {
 }
 #lets-work .lets-work-text .lets-work-sub-header {
   max-width: 563px;
-  max-height: 150px;
+  max-height: 200px;
   font-size: 26px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -6042,7 +6057,7 @@ header .container {
   margin-bottom: 0px !important;
 }
 .nivoSlider img {
-  height: 455px !important;
+  height: 800px !important;
   width: auto !important;
 }
 .nivo-caption {
@@ -6069,15 +6084,15 @@ header .container {
   z-index: 5;
 }
 .nivo-slice {
-  height: 455px !important;
+  height: 800px !important;
 }
 #tagline {
-  min-height: 455px;
-  max-height: 455px;
+  min-height: 800px;
+  max-height: 800px;
   background: #ffffff url('themes/default/loading.gif') no-repeat 50% 50%;
 }
 #mantra {
-  min-height: 455px;
+  min-height: 800px;
 }
 #mantra .carousel-caption {
   max-width: 1075px;
@@ -6125,13 +6140,13 @@ header .container {
   width: 100%;
 }
 #services .subheader {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 #services .subheader p {
+  color: #fff;
   margin: 0 auto;
-  width: 70%;
-  font-family: "Gloriola Thin";
-  font-size: 18px;
+  font-family: "Gloriola Std Light";
+  font-size: 22px;
   padding-bottom: 20px;
   padding-top: 20px;
   border-bottom: 1px solid #DBE7FF;
@@ -6171,13 +6186,13 @@ header .container {
   width: 100%;
 }
 #clients .subheader {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 #clients .subheader p {
+  color: #fff;
   margin: 0 auto;
-  width: 70%;
-  font-family: "Gloriola Thin";
-  font-size: 18px;
+  font-family: "Gloriola Std Light";
+  font-size: 22px;
   padding-bottom: 20px;
   padding-top: 20px;
   border-bottom: 1px solid #D9FFC0;
@@ -6245,6 +6260,19 @@ header .container {
   background-color: #f3ffeb;
   width: 100%;
   padding-bottom: 40px;
+}
+#technologies .subheader {
+  padding-bottom: 40px;
+}
+#technologies .subheader p {
+  margin: 0 auto;
+  font-family: "Gloriola Std Light";
+  font-size: 22px;
+  color: #767676;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 #technologies .header {
   color: #abd58f;
@@ -6320,19 +6348,25 @@ header .container {
   font-family: "Gloriola Thin";
 }
 #about {
-  background-color: #ffffff;
+  background: url("../../images/office5.jpg") no-repeat fixed 0 0;
+  overflow: auto;
+  background-size: cover;
+  background-position: 50% 0;
   width: 100%;
+  height: 100%;
   padding-bottom: 40px;
 }
 #about .header {
-  color: #34688d;
+  color: #fff;
+}
+#about .subheader {
+  padding-bottom: 40px;
 }
 #about .subheader p {
   margin: 0 auto;
-  width: 70%;
-  font-family: "Gloriola Thin";
-  font-size: 18px;
-  color: #767676;
+  font-family: "Gloriola Std Light";
+  font-size: 22px;
+  color: #fff;
   padding-bottom: 20px;
   padding-top: 20px;
   border-bottom: 1px solid #ddd;
@@ -6346,6 +6380,7 @@ header .container {
 #about .centerwrapper .about-container .member-row .member {
   float: left;
   margin: 40px;
+  color: #fff;
 }
 #about .centerwrapper .about-container .member-row .member .name h5 {
   font-family: "Gloriola Std Regular";
@@ -6426,7 +6461,7 @@ header .container {
   width: 64%;
 }
 #about .centerwrapper .about-container .member-row .member .name .icon-container .icon {
-  background-color: #2f2f2f;
+  background-color: #e0e0e0;
   width: 26px;
   height: 26px;
   float: left;
@@ -6745,6 +6780,12 @@ footer .copyright p {
   }
 }
 @media only screen and (max-width: 568px) {
+  #services .subheader p,
+  #clients .subheader p,
+  #technologies .subheader p,
+  #about .subheader p {
+    font-size: 16px;
+  }
   #tagline {
     min-height: 300px;
     max-height: 300px;
