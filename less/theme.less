@@ -372,15 +372,19 @@ header {
 
   }
 
+  .flexslider {
+    overflow: hidden;
+  }
 
   .centerwrapper {
+    width: 1200px;
 
     .header {
       color: #ffffff;
     }
 
     .client-items {
-      width: 1200px;
+
       margin: 0 auto;
       .item {
 
@@ -1002,10 +1006,14 @@ footer {
 
   }
 
-  #clients .centerwrapper .client-items {
+  #clients .centerwrapper {
     width: 1000px;
-    .item {
-      margin: 15px;
+
+    .client-items {
+
+      .item {
+        margin: 15px;
+      }
     }
   }
 }
@@ -1032,13 +1040,16 @@ footer {
 }
 
 @media only screen and (min-width: 569px) and (max-width: 1023px) {
-  #clients .centerwrapper .client-items {
+  #clients .centerwrapper {
     width: 300px;
-    .item {
-      float: none;
-      margin: auto;
-      margin-bottom: 30px;
-      width: 300px;
+    .client-items {
+
+      .item {
+        float: none;
+        margin: auto;
+        margin-bottom: 30px;
+        width: 300px;
+      }
     }
   }
 }
@@ -1292,31 +1303,34 @@ footer {
     }
   }
 
-  #clients .centerwrapper .client-items {
+  #clients .centerwrapper {
     width: 200px;
-    .item {
-      float: none;
-      margin: auto;
-      width: 200px;
-      img {
-        width: 200px;
-      }
+    .client-items {
 
-      .client-description-container {
+      .item {
+        float: none;
+        margin: auto;
         width: 200px;
-        margin-bottom: 20px;
-
-        .client-description-holder .client-description {
-            width: 200px;
+        img {
+          width: 200px;
         }
 
-        .client-description-holder {
-          .client-name {
-            margin-top: 5px;
+        .client-description-container {
+          width: 200px;
+          margin-bottom: 20px;
+
+          .client-description-holder .client-description {
+            width: 200px;
           }
 
-          .client-description {
-            font-size: 14px;
+          .client-description-holder {
+            .client-name {
+              margin-top: 5px;
+            }
+
+            .client-description {
+              font-size: 14px;
+            }
           }
         }
       }

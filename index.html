@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="dist/css/bootstrap.css">
   <link rel="stylesheet" href="dist/css/themes/default/default.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="dist/css/nivo-slider.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="dist/css/flexslider.css">
   <link rel="shortcut icon" type="image/ico" href="/images/favicon.ico" />
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
@@ -223,10 +224,10 @@
                         </p>
 
                     </div>
-                    <div class="centerwrapper">
-                        <div class="client-items clearfix">
+                    <div class="clients-flexslider carousel centerwrapper">
+                        <ul class="client-items clearfix slides">
 
-                            <div class="item">
+                            <li class="item">
                                 <a href="https://www.rocketmiles.com" target="_blank"><img src="images/rocketmiles-logo.jpg" class="img-circle"></a>
 
                                 <div class="client-description-container">
@@ -237,9 +238,9 @@
                                     </div>
                                 </div>
                                 <!--<p class="text-center">Rocketmiles</p>-->
-                            </div>
+                            </li>
 
-                            <div class="item">
+                            <li class="item">
                                 <a href="http://www.laiyacocogrove.com" target="_blank"><img src="images/lcg-logo.jpg" class="img-circle"></a>
                                 <div class="client-description-container">
                                     <div class="client-description-holder">
@@ -248,9 +249,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </li>
 
-                            <div class="item">
+                            <li class="item">
                                 <img src="images/rsvrd-logo.jpg" class="img-circle">
                                 <div class="client-description-container">
                                     <div class="client-description-holder">
@@ -259,8 +260,30 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+
+                            <li class="item">
+                                <a href="http://www.foxconnbuilders.com" target="_blank"><img src="images/foxconn-logo.jpg" class="img-circle"></a>
+                                <div class="client-description-container">
+                                    <div class="client-description-holder">
+                                        <div class="client-name">Foxconn Builders Inc.</div>
+                                        <div class="client-description">Informational website about the DAYU floodgate made with the finest and most durable aluminum material.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item">
+                                <img src="images/adapp-logo.jpg" class="img-circle"></a>
+                                <div class="client-description-container">
+                                    <div class="client-description-holder">
+                                        <div class="client-name">AdApp</div>
+                                        <div class="client-description">An online platform suitable for the out-of-home media industry. Monitors and manages media.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -788,94 +811,15 @@
     </div>
 </footer>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-    <script src="dist/js/waypoints.min.js"></script>
-    <script src="dist/js/jquery-ui-1.10.3.custom.min.js"></script>
-    <script type="text/javascript" src="dist/js/jquery.nivo.slider.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/jquery/jquery.js"><\/script>')</script>
-
-    <script src="assets/js/jquery.stellar.js"></script>
-    <script>
-
-        $(function(){
-            $.stellar({
-                horizontalScrolling: false,
-                verticalOffset: 100
-            });
-        });
-
-    </script>
-
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<script src="dist/js/waypoints.min.js"></script>
+<script src="dist/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="dist/js/jquery.nivo.slider.js"></script>
+<script>window.jQuery || document.write('<script src="assets/jquery/jquery.js"><\/script>')</script>
+<script defer src="dist/js/jquery.flexslider.js"></script>
+<script src="assets/js/jquery.stellar.js"></script>
 <script src="assets/js/masonry.pkgd.min.js"></script>
-
-    <script>
-        var $container = $('#portfolio-container');
-        // initialize
-        $container.masonry({
-            columnWidth: '.grid-sizer',
-            itemSelector: '.thumbnail',
-            gutter: 20
-
-        });
-
-        var $head = $( '#ha-header' );
-        $( '.ha-waypoint' ).each( function(i) {
-            var $el = $( this ),
-                    animClassDown = $el.data( 'animateDown' ),
-                    animClassUp = $el.data( 'animateUp' );
-
-            $el.waypoint( function( direction ) {
-                if( direction === 'down' && animClassDown ) {
-                    $head.attr('class', 'ha-header ' + animClassDown);
-                }
-                else if( direction === 'up' && animClassUp ){
-                    $head.attr('class', 'ha-header ' + animClassUp);
-                }
-            }, { offset: '100%' } );
-        } );
-
-        $(document).ready(function(){
-            $('a[href^="#"]').on('click',function (e) {
-                e.preventDefault();
-
-                var target = this.hash,
-                        $target = $(target);
-
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top-80
-                }, 1000, 'easeInOutCirc' );
-            });
-        });
-
-        $('.navbar .navbar-right li > a').click(function() {
-            var navbar_toggle = $('.navbar-toggle');
-            if (navbar_toggle.is(':visible')) {
-                navbar_toggle.trigger('click');
-            }
-        });
-
-    </script>
-
-    <script type="text/javascript">
-        $(window).load(function() {
-            $('#slider').nivoSlider( {
-                animSpeed:500, // Slide transition speed
-                pauseTime:5000, // How long each slide will show
-                startSlide:0, // Set starting Slide (0 index)
-                controlNav:true,
-                directionNav:true, // Next & Prev navigation
-                directionNavHide:false, // Only show on hover
-                keyboardNav:true, // Use left & right arrows
-                pauseOnHover:false, // Stop animation while hovering
-                manualAdvance:false, // Force manual transitions
-                prevText: 'Prev', // Prev directionNav text
-                nextText: 'Next' // Next directionNav text
-            });
-        });
-    </script>
-
-
+<script src="dist/js/application.js"></script>
 
 </body>
 </html>
