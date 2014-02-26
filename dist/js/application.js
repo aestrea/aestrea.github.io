@@ -5,75 +5,75 @@ $(function(){
     });
 });
 
-$(window).load(function(){
-
-    if ( $(window).width() >= 1200 ) {
-        $('.clients-flexslider').flexslider({
-            animation: "slide",
-            easing: "swing",
-            animationLoop: true,
-            animationSpeed: 5000,
-            itemWidth: 300,
-            itemMargin: 149,
-            minItems: 2,
-            maxItems: 3,
-            controlNav: false,
-            directionNav: false,
-            move: 1,
-            pauseOnHover: true
-        });
-    }else if ($(window).width() >= 1024 && $(window).width() <= 1199 ) {
-        $('.clients-flexslider').flexslider({
-            animation: "slide",
-            easing: "swing",
-            animationLoop: true,
-            animationSpeed: 5000,
-            itemWidth: 300,
-            itemMargin: 40,
-            minItems: 2,
-            maxItems: 3,
-            controlNav: false,
-            directionNav: false,
-            move: 1,
-            pauseOnHover: true
-        });
-    }
-
-});
-
-$(window).resize(function(){
-    if ( $(window).width() >= 1200 ) {
-        $('.clients-flexslider').flexslider({
-            animation: "slide",
-            easing: "swing",
-            animationLoop: true,
-            animationSpeed: 5000,
-            itemWidth: 300,
-            itemMargin: 149,
-            minItems: 2,
-            maxItems: 3,
-            controlNav: false,
-            directionNav: false,
-            move: 1,
-            pauseOnHover: true
-        });
-    }else if ($(window).width() >= 1024 && $(window).width() <= 1199 ) {
-        $('.clients-flexslider').flexslider({
-            animation: "slide",
-            easing: "swing",
-            animationLoop: true,
-            animationSpeed: 5000,
-            itemWidth: 300,
-            itemMargin: 40,
-            minItems: 2,
-            maxItems: 3,
-            controlNav: false,
-            directionNav: false,
-            move: 1,
-            pauseOnHover: true
-        });
-    }
-})
+//$(window).load(function(){
+//
+//    if ( $(window).width() >= 1200 ) {
+//        $('.clients-flexslider').flexslider({
+//            animation: "slide",
+//            easing: "swing",
+//            animationLoop: true,
+//            animationSpeed: 5000,
+//            itemWidth: 300,
+//            itemMargin: 149,
+//            minItems: 2,
+//            maxItems: 3,
+//            controlNav: false,
+//            directionNav: false,
+//            move: 1,
+//            pauseOnHover: true
+//        });
+//    }else if ($(window).width() >= 1024 && $(window).width() <= 1199 ) {
+//        $('.clients-flexslider').flexslider({
+//            animation: "slide",
+//            easing: "swing",
+//            animationLoop: true,
+//            animationSpeed: 5000,
+//            itemWidth: 300,
+//            itemMargin: 40,
+//            minItems: 2,
+//            maxItems: 3,
+//            controlNav: false,
+//            directionNav: false,
+//            move: 1,
+//            pauseOnHover: true
+//        });
+//    }
+//
+//});
+//
+//$(window).resize(function(){
+//    if ( $(window).width() >= 1200 ) {
+//        $('.clients-flexslider').flexslider({
+//            animation: "slide",
+//            easing: "swing",
+//            animationLoop: true,
+//            animationSpeed: 5000,
+//            itemWidth: 300,
+//            itemMargin: 149,
+//            minItems: 2,
+//            maxItems: 3,
+//            controlNav: false,
+//            directionNav: false,
+//            move: 1,
+//            pauseOnHover: true
+//        });
+//    }else if ($(window).width() >= 1024 && $(window).width() <= 1199 ) {
+//        $('.clients-flexslider').flexslider({
+//            animation: "slide",
+//            easing: "swing",
+//            animationLoop: true,
+//            animationSpeed: 5000,
+//            itemWidth: 300,
+//            itemMargin: 40,
+//            minItems: 2,
+//            maxItems: 3,
+//            controlNav: false,
+//            directionNav: false,
+//            move: 1,
+//            pauseOnHover: true
+//        });
+//    }
+//})
 
 var $container = $('#portfolio-container');
 // initialize
