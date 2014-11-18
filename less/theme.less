@@ -72,6 +72,21 @@ body {
   -webkit-filter: grayscale(0%);
 }
 
+.rotate{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+ 
+    }   
+ 
 .container {
   background-color: #FAFAFA;
   max-width: 100%;
@@ -206,12 +221,12 @@ header {
 
   h1 {
     text-align: center;
-    font-family: "Gloriola Std Regular";
+    font-family: "Gloriola Thin";
     font-size: 46px;
   }
 
   p {
-    font-family: "Gloriola Std Regular";
+    font-family: "Gloriola Thin";
     font-size: 28px;
     text-align: center;
   }
@@ -249,7 +264,7 @@ header {
 
     padding-bottom: 100px;
     h1 {
-      font-family: "Gloriola Std Regular";
+      font-family: "Gloriola Thin";
       font-size: 60px;
       padding-bottom: 20px;
     }
@@ -262,7 +277,7 @@ header {
       padding-right: 20px;
       p {
         position: relative;
-        font-family: "Gloriola Std Regular";
+        font-family: "Gloriola Thin";
         font-size: 28px;
         color: #d2d2d2;
       }
@@ -282,7 +297,7 @@ header {
 }
 
 .header {
-  font-family: "Gloriola Std Light";
+  font-family: "Gloriola Thin";
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
@@ -301,7 +316,7 @@ header {
     p {
       color: #fff;
       margin: 0 auto;
-      font-family: "Gloriola Std Light";
+      font-family: "Gloriola Thin";
       font-size: 20px;
       padding-bottom: 20px;
       padding-top: 20px;
@@ -329,13 +344,24 @@ header {
 
           margin-left: 120px;
           h4 {
-            font-family: "Gloriola Std Regular";
+            font-family: "Gloriola Thin";
+            font-weight: 600;
+            font-size: 19px;
           }
           p {
             width: 300px;
             font-family: "Gloriola Thin";
             font-size: 18px;
           }
+        }
+        
+        &:hover {
+        	.rotate {
+        	    -webkit-transform:rotate(360deg);
+			    -moz-transform:rotate(360deg); 
+			    -o-transform:rotate(360deg);
+        	}
+        
         }
       }
 
@@ -362,7 +388,7 @@ header {
     p {
       color: #fff;
       margin: 0 auto;
-      font-family: "Gloriola Std Light";
+      font-family: "Gloriola Thin";
       font-size: 20px;
       padding-bottom: 20px;
       padding-top: 20px;
@@ -413,7 +439,7 @@ header {
             .client-name {
               text-align: center;
               height: 90px;
-              font-family: "Gloriola Std Regular";
+              font-family: "Gloriola Thin";
               font-size: 20px;
               margin-top: 20px;
             }
@@ -452,7 +478,7 @@ header {
     padding-bottom: 40px;
     p {
       margin: 0 auto;
-      font-family: "Gloriola Std Light";
+      font-family: "Gloriola Thin";
       font-size: 20px;
       color: #767676;
       padding-bottom: 20px;
@@ -550,7 +576,7 @@ header {
 
 
         h5 {
-          font-family: "Gloriola Std Regular";
+          font-family: "Gloriola Thin";
         }
 
         p {
@@ -580,7 +606,7 @@ header {
       padding-bottom: 40px;
     p {
       margin: 0 auto;
-      font-family: "Gloriola Std Light";
+      font-family: "Gloriola Thin";
       font-size: 20px;
       color: #fff;
       padding-bottom: 20px;
@@ -609,12 +635,12 @@ header {
           .name {
 
             h5 {
-              font-family: "Gloriola Std Regular";
+              font-family: "Gloriola Thin";
               font-size: 16px;
             }
 
             p {
-              font-family: "Gloriola Std Light";
+              font-family: "Gloriola Thin";
               font-size: 14px;
             }
 
@@ -730,7 +756,7 @@ header {
   //  background-color: #ffffff;
   width: 100%;
   height: 630px;
-  font-family: "Gloriola Std Regular";
+  font-family: "Gloriola Thin";
 
   .contact-container {
     width: 560px;
@@ -790,7 +816,7 @@ header {
         }
 
         p {
-          font-family: "Gloriola Std Light";
+          font-family: "Gloriola Thin";
           margin-left: 50px;
           font-size: 30px;
 
@@ -824,7 +850,7 @@ footer {
       text-align: center;
       padding-top: 50px;
     p {
-      font-family: "Gloriola Std Light";
+      font-family: "Gloriola Thin";
       color: #ffffff;
       padding-left: 10px;
       padding-right: 10px;
@@ -868,7 +894,7 @@ footer {
       padding-bottom: 100px;
 
       h1 {
-        font-family: "Gloriola Std Regular";
+        font-family: "Gloriola Thin";
         font-size: 40px;
         padding-bottom: 20px;
       }
@@ -1208,7 +1234,7 @@ footer {
       padding-bottom: 45px;
 
       h1 {
-        font-family: "Gloriola Std Regular";
+        font-family: "Gloriola Thin";
         font-size: 20px;
         padding-bottom: 10px;
       }
