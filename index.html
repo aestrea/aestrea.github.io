@@ -9,9 +9,24 @@
   <link rel="stylesheet" href="dist/css/themes/default/default.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="dist/css/nivo-slider.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="dist/css/flexslider.css">
+  <link rel="stylesheet" href="dist/css/animate.css">
   <link rel="shortcut icon" type="image/ico" href="/images/favicon.ico" />
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="dist/js/wow.min.js"></script>
+    <script type="text/javascript">
+       wow = new WOW(
+    {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       100,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    }
+  )
+  wow.init();
+    </script>
+
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-35534015-2']);
@@ -82,12 +97,12 @@
         <div id="lets-work" class="container">
             <div class="content-container">
                 <div class="lets-work-text">
-                    <div class="lets-work-header">
+                    <div class="lets-work-header wow fadeInDown">
 
                         Let's work together and create something awesome!
                     </div>
 
-                    <div class="lets-work-sub-header">
+                    <div class="lets-work-sub-header wow fadeInLeft" data-wow-delay="500ms">
                         <!--Experts in our field, we design and custom-build-->
                         <!--eye-catching and user-friendly web apps that achieve-->
                         <!--the results that our clients want them to.-->
@@ -98,12 +113,13 @@
                     </div>
                 </div>
             </div>
-
-                <img src="images/lets-work.png"/>
+            <div class="wow fadeIn" data-wow-delay="1000ms">
+                <img src="images/lets-work.png">
+            </div>
         </div>
 
 
-            <div id="tagline" class="slider-wrapper theme-default">
+            <div id="tagline" class="slider-wrapper theme-default wow fadeInUpBig">
                 <div id="slider" class="nivoSlider">
                     <img src="images/plane3.jpg" data-thumb="images/plane3.jpg" alt="" title="#driven-by-power" />
                     <img src="images/plane2.jpg" data-thumb="images/plane2.jpg" alt="" title="#burning-with-passion" />
@@ -133,13 +149,13 @@
                 <!--... -->
             </section>
 
-            <div id="services" class="container">
+            <div id="services" class="container wow fadeInUp">
 
                 <div class="content-container">
 
-                    <div class="header">what we do</div>
+                    <div class="header wow fadeIn" data-wow-delay="500ms">what we do</div>
 
-                    <div class="subheader text-center">
+                    <div class="subheader text-center wow fadeIn" data-wow-delay="600ms">
                         <p>Currently in the business world, we are witnessing a fact that the Internet is essential to modern living.
                         It is hard to think how businesses can communicate and operate fast without the Internet.
                         Companies nowadays use the web to perform their business processes efficiently and allow them to expand easily.
@@ -152,9 +168,10 @@
 
                         <div class="service-row">
 
-                            <div class="service-item">
+                            <div class="service-item wow fadeInLeft">
                                 <div class="service-icon rotate">
-                                    <img src="images/icon-gear.jpg"/>
+                                    
+                                    <div class="wow rotateIn"><img src="images/icon-gear.jpg"/></div>
                                 </div>
                                 <div class="service-content">
                                     <h4>Enterprise Application Development</h4>
@@ -162,7 +179,7 @@
                                 </div>
                             </div>
 
-                            <div class="service-item">
+                            <div class="service-item wow fadeInRight">
                                 <div class="service-icon rotate">
                                     <img src="images/icon-design.jpg"/>
                                 </div>
@@ -174,7 +191,7 @@
                         </div>
 
                         <div class="service-row">
-                            <div class="service-item">
+                            <div class="service-item wow fadeInLeft">
                                 <div class="service-icon rotate">
                                     <img src="images/icon-mobile.jpg"/>
                                 </div>
@@ -184,7 +201,7 @@
                                 </div>
                             </div>
 
-                            <div class="service-item">
+                            <div class="service-item wow fadeInRight">
                                 <div class="service-icon rotate">
                                     <img src="images/icon-motion.jpg"/>
                                 </div>
@@ -196,7 +213,7 @@
                          </div>
 
                         <div class="service-row">
-                            <div class="service-item">
+                            <div class="service-item wow fadeInUp" data-wow-offset="300">
                                 <div class="service-icon rotate">
                                     <img src="images/icon-embedded.jpg"/>
                                 </div>
@@ -210,13 +227,13 @@
                </div>
             </div>
 
-            <div id="clients" class="container">
+            <div id="clients" class="container wow fadeInUp">
                 <div class="content-container">
 
 
-                    <div class="header">what we are working on</div>
+                    <div class="header wow fadeIn" data-wow-delay="500ms">what we are working on</div>
 
-                    <div class="subheader text-center">
+                    <div class="subheader text-center wow fadeIn" data-wow-delay="600ms">
                         <p>
                             We are privileged to work with companies who have passion for technology and entrepreneurs who want to bring
                             something new to the world. We are engaged in different ways and we don't take this lightly. We help them solve
@@ -227,7 +244,7 @@
                     <div class="clients-flexslider carousel centerwrapper">
                         <ul class="client-items clearfix slides">
 
-                            <li class="item">
+                            <li class="item wow rollIn" data-wow-delay="700ms">
                                 <a href="https://www.rocketmiles.com" target="_blank"><img src="images/rocketmiles-logo.jpg" class="img-circle"></a>
 
                                 <div class="client-description-container">
@@ -240,7 +257,7 @@
                                 <!--<p class="text-center">Rocketmiles</p>-->
                             </li>
 
-                            <li class="item">
+                            <li class="item wow rollIn" data-wow-delay="800ms">
                                 <a href="http://www.ship.com.ph" target="_blank"><img src="images/ship-logo.jpg" class="img-circle"></a>
                                 <div class="client-description-container">
                                     <div class="client-description-holder">
@@ -251,7 +268,7 @@
                                 </div>
                             </li>
                             
-                            <li class="item">
+                            <li class="item wow rollIn" data-wow-delay="900ms">
                                 <a href="http://www.msm.com.ph" target="_blank"><img src="images/msm-logo.jpg" class="img-circle"></a>
                                 <div class="client-description-container">
                                     <div class="client-description-holder">
@@ -262,7 +279,7 @@
                                 </div>
                             </li>
 
-                            <li class="item">
+                            <li class="item wow rollIn" data-wow-delay="500ms">
                                 <a href="http://www.laiyacocogrove.com" target="_blank"><img src="images/lcg-logo.jpg" class="img-circle"></a>
                                 <div class="client-description-container">
                                     <div class="client-description-holder">
@@ -273,7 +290,7 @@
                                 </div>
                             </li>
 
-                            <li class="item">
+                            <li class="item wow rollIn" data-wow-delay="600ms">
                                 <img src="images/rsvrd-logo.jpg" class="img-circle">
                                 <div class="client-description-container">
                                     <div class="client-description-holder">
@@ -284,7 +301,7 @@
                                 </div>
                             </li>
 
-                            <li class="item">
+                            <li class="item wow rollIn" data-wow-delay="700ms">
                                 <a href="http://www.foxconnbuilders.com" target="_blank"><img src="images/foxconn-logo.jpg" class="img-circle"></a>
                                 <div class="client-description-container">
                                     <div class="client-description-holder">
@@ -295,7 +312,7 @@
                                 </div>
                             </li>
 
-                            <li class="item">
+                            <li class="item wow rollIn" data-wow-delay="500ms">
                                 <img src="images/adapp-logo.jpg" class="img-circle"></a>
                                 <div class="client-description-container">
                                     <div class="client-description-holder">
@@ -306,7 +323,7 @@
                                 </div>
                             </li>
                             
-                            <li class="item">
+                            <li class="item wow rollIn" data-wow-delay="600ms">
                                 <a href="http://www.again.sg" target="_blank"><img src="images/again-logo.jpg" class="img-circle"></a>
                                 <div class="client-description-container">
                                     <div class="client-description-holder">
@@ -321,13 +338,13 @@
                 </div>
             </div>
 
-            <div id="technologies" class="container">
+            <div id="technologies" class="container wow fadeInUp">
 
                 <div class="content-container">
 
-                    <div class="header">tools we use</div>
+                    <div class="header wow fadeIn" data-wow-delay="500ms">tools we use</div>
 
-                    <div class="subheader text-center">
+                    <div class="subheader text-center wow fadeIn" data-wow-delay="600ms">
                         <p>
                             Our team uses a wide range of tools to bring the best software to our clients. Through continuous learning, we make sure we don't get left behind with technology.
                         </p>
@@ -338,26 +355,26 @@
 
                         <div class="tool-container">
 
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/grails-logo.png" alt="Grails"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/groovy-logo.png" alt="Groovy" /> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/html5-logo.png" alt="HTML5"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/css3-logo.png" alt="CSS3"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/jquery-logo.png" alt="jQuery"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/jquery-mobile-logo.png" alt="jQuery Mobile"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/java-logo.png" alt="Java"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/spring-logo.png" alt="Spring"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/hibernate-logo.png" alt="Hibernate"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/ajax-logo.png" alt="Ajax"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/javascript-logo.png" alt="Javascript"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/git-logo.png" alt="Git"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/google-map-logo.jpg" alt="Google Maps"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/bootstrap-logo.png" alt="Twitter Bootstrap"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/android-logo.png" alt="Android"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/ios-logo.png" alt="iOS"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/django-logo.png" alt="Django"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/adobe-logo.png" alt="Adobe"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/zigbee-logo.png" alt="Zigbee"/> </div></div>
-                            <div class="tool-item"><div class="image-holder img-circle"> <img src="images/tools/scrum-logo.png" alt="Scrum"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/grails-logo.png" alt="Grails"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/groovy-logo.png" alt="Groovy" /> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/html5-logo.png" alt="HTML5"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/css3-logo.png" alt="CSS3"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/jquery-logo.png" alt="jQuery"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/jquery-mobile-logo.png" alt="jQuery Mobile"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/java-logo.png" alt="Java"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/spring-logo.png" alt="Spring"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/hibernate-logo.png" alt="Hibernate"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/ajax-logo.png" alt="Ajax"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/javascript-logo.png" alt="Javascript"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/git-logo.png" alt="Git"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/google-map-logo.jpg" alt="Google Maps"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/bootstrap-logo.png" alt="Twitter Bootstrap"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/android-logo.png" alt="Android"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/ios-logo.png" alt="iOS"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/django-logo.png" alt="Django"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/adobe-logo.png" alt="Adobe"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/zigbee-logo.png" alt="Zigbee"/> </div></div>
+                            <div class="tool-item wow fadeInDown"><div class="image-holder img-circle"> <img src="images/tools/scrum-logo.png" alt="Scrum"/> </div></div>
                         </div>
                     </div>
                 </div>
@@ -492,13 +509,13 @@
                 <!--</div>-->
             <!--</div>-->
 
-            <div id="about" class="container" data-stellar-background-ratio="0.3">
+            <div id="about" class="container wow fadeInUp" data-stellar-background-ratio="0.3">
 
                 <div class="content-container">
 
-                    <div class="header">who we are</div>
+                    <div class="header wow fadeIn" data-wow-delay="500ms">who we are</div>
 
-                    <div class="subheader text-center">
+                    <div class="subheader text-center wow fadeIn" data-wow-delay="600ms">
                         <p>We are a bunch of crazy geeks and artists with one common passion, the love for design and code.
                             We decided to start a company with a single vision in mind - that through teamwork, great attitude and good appearance, 
                             we'll ascend above the circumstances and burst beyond the limits set by men in order to provide service that is excellent, 
@@ -508,13 +525,13 @@
                     <div class="centerwrapper">
                         <div class="about-container">
 
-                            <div class="member-row">
+                            <div class="member-row wow fadeIn" data-wow-delay="700ms" data-wow-offset="200">
 
                                 <div class="member">
                                     <div class="name text-center">
 
                                         <div class="flip">
-                                            <div class="photo">
+                                            <div class="photo wow flip" data-wow-delay="600ms">
                                                 <div class="face front img-circle">
                                                     <img src="images/about/bryan.png"/>
                                                 </div>
@@ -532,76 +549,76 @@
                                 </div>
 
                                 <div class="member">
-                            <div class="name text-center">
+                                    <div class="name text-center">
 
-                                <div class="flip">
-                                    <div class="photo">
-                                        <div class="face front img-circle">
-                                            <img src="images/about/josan.png"/>
+                                        <div class="flip">
+                                            <div class="photo wow flip" data-wow-delay="600ms">
+                                                <div class="face front img-circle">
+                                                    <img src="images/about/josan.png"/>
+                                                </div>
+                                                <div class="face back img-circle">
+                                                    <img src="images/about/josan2.png"/>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="face back img-circle">
-                                            <img src="images/about/josan2.png"/>
+                                        <h5>Josan Dometita</h5>
+                                        <p>The Art Enthusiast</p>
+                                        <div class="icon-container">
+                                            <div class="icon img-circle"></div><div class="icon img-circle"></div><div class="icon img-circle"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <h5>Josan Dometita</h5>
-                                <p>The Art Enthusiast</p>
-                                <div class="icon-container">
-                                    <div class="icon img-circle"></div><div class="icon img-circle"></div><div class="icon img-circle"></div>
-                                </div>
-                            </div>
-                        </div>
 
                                 <div class="member">
-                            <div class="name text-center">
+                                    <div class="name text-center">
 
-                                <div class="flip">
-                                    <div class="photo">
-                                        <div class="face front img-circle">
-                                            <img src="images/about/arvin.png"/>
+                                        <div class="flip">
+                                            <div class="photo wow flip" data-wow-delay="600ms">
+                                                <div class="face front img-circle">
+                                                    <img src="images/about/arvin.png"/>
+                                                </div>
+                                                <div class="face back img-circle">
+                                                    <img src="images/about/arvin2.png"/>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="face back img-circle">
-                                            <img src="images/about/arvin2.png"/>
+                                        <h5>Arvin Del Rosario</h5>
+                                        <p>The Skater</p>
+                                        <div class="icon-container">
+                                            <div class="icon img-circle"></div><div class="icon img-circle"></div><div class="icon img-circle"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <h5>Arvin Del Rosario</h5>
-                                <p>The Skater</p>
-                                <div class="icon-container">
-                                    <div class="icon img-circle"></div><div class="icon img-circle"></div><div class="icon img-circle"></div>
-                                </div>
-                            </div>
-                        </div>
 
                                 <div class="member">
-                            <div class="name text-center">
+                                    <div class="name text-center">
 
-                                <div class="flip">
-                                    <div class="photo">
-                                        <div class="face front img-circle">
-                                            <img src="images/about/dino.png"/>
+                                        <div class="flip">
+                                            <div class="photo wow flip" data-wow-delay="600ms">
+                                                <div class="face front img-circle">
+                                                    <img src="images/about/dino.png"/>
+                                                </div>
+                                                <div class="face back img-circle">
+                                                    <img src="images/about/dino2.png"/>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="face back img-circle">
-                                            <img src="images/about/dino2.png"/>
+                                        <h5>Dino Poblete</h5>
+                                        <p>The Musician</p>
+                                        <div class="icon-container">
+                                            <div class="icon img-circle"></div><div class="icon img-circle"></div><div class="icon img-circle"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <h5>Dino Poblete</h5>
-                                <p>The Musician</p>
-                                <div class="icon-container">
-                                    <div class="icon img-circle"></div><div class="icon img-circle"></div><div class="icon img-circle"></div>
-                                </div>
-                            </div>
-                        </div>
                             </div>
 
 
-                            <div class="member-row">
+                         <div class="member-row wow fadeIn" data-wow-delay="800ms"  data-wow-offset="350">
 
                                 <div class="member">
                                     <div class="name text-center">
                                         <div class="flip">
-                                            <div class="photo">
+                                            <div class="photo wow flip" data-wow-delay="500ms">
                                                 <div class="face front img-circle">
                                                     <img src="images/about/hans.png"/>
                                                 </div>
@@ -622,7 +639,7 @@
                                     <div class="name text-center">
 
                                         <div class="flip">
-                                            <div class="photo">
+                                            <div class="photo wow flip" data-wow-delay="500ms">
                                                 <div class="face front img-circle">
                                                     <img src="images/about/chester.png"/>
                                                 </div>
@@ -643,7 +660,7 @@
                                     <div class="name text-center">
 
                                         <div class="flip">
-                                            <div class="photo">
+                                            <div class="photo wow flip" data-wow-delay="500ms">
                                                 <div class="face front img-circle">
                                                     <img src="images/about/francis.png"/>
                                                 </div>
@@ -664,7 +681,7 @@
                                     <div class="name text-center">
 
                                         <div class="flip">
-                                            <div class="photo">
+                                            <div class="photo wow flip" data-wow-delay="500ms">
                                                 <div class="face front img-circle">
                                                     <img src="images/about/aldrin.png"/>
                                                 </div>
@@ -682,12 +699,12 @@
                                 </div>
                             </div>
 
-                            <div class="member-row">
+                            <div class="member-row wow fadeIn" data-wow-delay="900ms" data-wow-offset="550">
 
                                 <div class="member">
                                     <div class="name text-center">
                                         <div class="flip">
-                                            <div class="photo">
+                                            <div class="photo wow flip" data-wow-delay="600ms">
                                                 <div class="face front img-circle">
                                                     <img src="images/about/siena.png"/>
                                                 </div>
@@ -707,7 +724,7 @@
                                 <div class="member">
                                     <div class="name text-center">
                                         <div class="flip">
-                                            <div class="photo">
+                                            <div class="photo wow flip" data-wow-delay="600ms">
                                                 <div class="face front img-circle">
                                                     <img src="images/about/alexis.png"/>
                                                 </div>
@@ -727,7 +744,7 @@
                                 <div class="member">
                                     <div class="name text-center">
                                         <div class="flip">
-                                            <div class="photo">
+                                            <div class="photo wow flip" data-wow-delay="600ms">
                                                 <div class="face front img-circle">
                                                     <img src="images/about/princess.png"/>
                                                 </div>
@@ -747,7 +764,7 @@
                                 <div class="member">
                                     <div class="name text-center">
                                         <div class="flip">
-                                            <div class="photo">
+                                            <div class="photo wow flip" data-wow-delay="600ms">
                                                 <div class="face front img-circle">
                                                     <img src="images/about/spock.png"/>
                                                 </div>
@@ -765,7 +782,7 @@
                                 </div>
                             </div>
 
-                            <div class="member-row">
+                            <div class="member-row wow fadeIn" data-wow-delay="1000ms" data-wow-offset="800">
                                 
                             </div>
                         </div>
@@ -774,7 +791,7 @@
             </div>
 
             <div id="contact">
-                <div class="contact-container">
+                <div class="contact-container wow fadeInUp">
 
                     <div class="info-holder">
                         <div class="info">
